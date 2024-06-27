@@ -8,7 +8,7 @@
     align-items: center;
   }
 
-  .banner-img{
+  .banner-img {
     height: auto;
     width: 100%;
     object-fit: contain;
@@ -26,7 +26,6 @@
     gap: 8px;
     align-items: center;
     justify-content: center;
-
   }
 
   .banner-title {
@@ -37,22 +36,23 @@
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    font-family: var(--font-heading-family);
   }
 
-  .banner-date{
+  .banner-date {
     color: #fff;
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
     line-height: 20.4px;
     margin: 0;
+    font-family: var(--font-heading-family);
   }
-
 </style>
 
 <div class="banner-wrapper">
   <img
-  class="banner-img"
+    class="banner-img"
     srcset="{{ section.settings.banner_image | image_url: width:760 }}, {{ section.settings.banner_image | image_url: width: 760 }} 2x"
     src="{{ section.settings.banner_image | image_url: width: 760 }}"
     alt="{{ section.settings.banner_image.alt | escape }}"
@@ -85,9 +85,9 @@
       "default": "UPCOMING RELEASE"
     },
     {
-        "type":"text",
-        "id": "date",
-        "label": "Release date"
+      "type": "text",
+      "id": "date",
+      "label": "Release date"
     }
   ],
   "presets": [{ "name": "Hero Banner" }]
