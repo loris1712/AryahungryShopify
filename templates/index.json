@@ -9,30 +9,15 @@
 */
 {
   "sections": {
+    "hero_w4Lm7h": {
+      "type": "hero",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/Rectangle_82_1.png",
+        "banner_title": "Upcoming release"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
-      "blocks": {
-        "slide-0": {
-          "type": "slide",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h2",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify:\/\/collections\/all",
-            "button_style_secondary": false,
-            "box_align": "top-right",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 20,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "left"
-          }
-        }
-      },
-      "block_order": [
-        "slide-0"
-      ],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -142,20 +127,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "hero_w4Lm7h": {
-      "type": "hero",
-      "settings": {
-        "banner_image": "shopify:\/\/shop_images\/Rectangle_82_1.png",
-        "banner_title": "Upcoming release"
-      }
     }
   },
   "order": [
+    "hero_w4Lm7h",
     "slideshow",
     "rich_text_FExpBf",
     "featured_collection_GtRaDg",
-    "rich_text_TWPiyH",
-    "hero_w4Lm7h"
+    "rich_text_TWPiyH"
   ]
 }
