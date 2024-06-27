@@ -2,7 +2,7 @@
   .banner-wrapper {
     position: relative;
     height: fit-content;
-    padding-inline: 52px;
+    padding-inline: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,12 @@
     position: absolute;
     z-index: 1000;
     top: 10px;
-    right: 52px;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
 
   }
 
@@ -28,6 +33,14 @@
     color: #fff;
     font-size: 24px;
     font-weight: 400;
+    text-align: center;
+    line-height: 20.4px;
+  }
+
+  .banner-date{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
     text-align: center;
     line-height: 20.4px;
   }
@@ -46,6 +59,7 @@
   >
   <div class="banner-text-container">
     <p class="banner-title">{{ section.settings.banner_title }}</p>
+    <p class="banner-date">{{ section.settings.date }}</p>
   </div>
 </div>
 
