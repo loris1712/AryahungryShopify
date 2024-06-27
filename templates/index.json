@@ -17,19 +17,6 @@
         "date": "10 DAYS 23 HR 10 MIN 00 SEC"
       }
     },
-    "slideshow": {
-      "type": "slideshow",
-      "settings": {
-        "layout": "grid",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "rich_text_FExpBf": {
       "type": "rich-text",
       "blocks": {
@@ -64,7 +51,7 @@
       "type": "featured-collection",
       "custom_css": [
         ".card__heading--placeholder {color: #015a3c;}",
-        "slider-component {transform: rotate(-2deg) !important; margin:8rem 0;}"
+        "slider-component {transform: rotate(-2deg) !important; margin: 8rem 0;}"
       ],
       "settings": {
         "title": "",
@@ -121,7 +108,6 @@
   },
   "order": [
     "hero_w4Lm7h",
-    "slideshow",
     "rich_text_FExpBf",
     "featured_collection_GtRaDg",
     "rich_text_TWPiyH"
