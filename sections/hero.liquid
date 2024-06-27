@@ -1,23 +1,45 @@
+<style>
+  .banner-wrapper {
+    position: relative;
+    height: 756px;
+    border-radius: 28px;
+    overflow: hidden;
+  }
+
+  .banner-title {
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20.4px;
+  }
+</style>
+
+<div class="banner-wrapper">
+    {{ section.settings.banner_image }}
+    <h2 class="banner-title">{{section.settings.banner_image}}</h2>
+</div>
+
 {% schema %}
 {
-    "name": "Header Banner",
-    "tag": "section",
-    "class": "hero",
-    "limit": 1,
-    "settings": [
-        {
-            "type": "image_picker",
-            "id": "banner_image",
-            "label": "Banner Image"
-        },
-        {
-            "type":"text",
-            "id": "banner_title",
-            "label": "Banner Title"
-        }
-        ],
-        "presets": [
-            {"name": "Hero Banner"}
-        ]
+  "name": "Header Banner",
+  "tag": "section",
+  "class": "hero",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "banner_title",
+      "label": "Banner Title"
+    }
+  ],
+  "presets": [{ "name": "Hero Banner" }]
 }
 {% endschema %}
