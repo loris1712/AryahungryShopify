@@ -64,7 +64,7 @@
       "type": "featured-collection",
       "custom_css": [
         ".card__heading--placeholder {color: #015a3c;}",
-        "slider-component {transform: rotate(-2deg) !important;}"
+        "slider-component {transform: rotate(-2deg) !important; margin:8rem 0;}"
       ],
       "settings": {
         "title": "",
