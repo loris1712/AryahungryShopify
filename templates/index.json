@@ -9,6 +9,13 @@
 */
 {
   "sections": {
+    "hero_w4Lm7h": {
+      "type": "hero",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/Rectangle_82_1.png",
+        "banner_title": "Upcoming release"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -142,20 +149,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "hero_w4Lm7h": {
-      "type": "hero",
-      "settings": {
-        "banner_image": "shopify:\/\/shop_images\/Rectangle_82_1.png",
-        "banner_title": "Upcoming release"
-      }
     }
   },
   "order": [
+    "hero_w4Lm7h",
     "slideshow",
     "rich_text_FExpBf",
     "featured_collection_GtRaDg",
-    "rich_text_TWPiyH",
-    "hero_w4Lm7h"
+    "rich_text_TWPiyH"
   ]
 }
