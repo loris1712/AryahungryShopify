@@ -88,10 +88,18 @@
             "name": "Facebook",
             "url": "shopify:\/\/products\/dont-fuck-it-up"
           }
+        },
+        "social_MnWUUU": {
+          "type": "social",
+          "settings": {
+            "name": "Twitter",
+            "url": "https:\/\/twitter.com"
+          }
         }
       },
       "block_order": [
-        "social_HwwRx3"
+        "social_HwwRx3",
+        "social_MnWUUU"
       ],
       "custom_css": [
 
