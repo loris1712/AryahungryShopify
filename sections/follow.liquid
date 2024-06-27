@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5vh;
   }
   .heading {
     color: #015a3c;
@@ -14,6 +15,8 @@
     font-size: 48px;
     width: 520px;
       font-weight:900;
+      margin: 0;
+      padding: 0;
 
   }
 
@@ -28,7 +31,6 @@
 
 <div class="wrapper">
   <h2 class="heading">{{ section.settings.header }}</h2>
-
   <div class="social-items">
     {% for block in section.blocks %}
       <a href="{{block.settings.url}}">
