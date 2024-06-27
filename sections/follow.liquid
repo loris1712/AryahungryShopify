@@ -1,0 +1,70 @@
+<style>
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  .heading {
+    color: #015a3c;
+    line-height: 69px;
+    text-align: center;
+    text-transform: uppercase;
+        font-family: var(--font-heading-family);
+
+  }
+
+  .social-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+</style>
+
+
+<div class="wrapper">
+    <h2 class="heading">{{ section.settings.header }}</h2>
+
+    <div class="social-items">
+        {% for social in section.blocks.settings %}
+        <p>{{social.name}}</p>
+    {% endfor %}
+    </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Follow",
+  "tag": "div",
+  "class": "follow-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header",
+      "default": "FOLLOW ALONG FOR UPDATES"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Social Link",
+      "type": "social",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
