@@ -75,7 +75,8 @@
     "featured_collection_GtRaDg": {
       "type": "featured-collection",
       "custom_css": [
-        ".card__heading--placeholder {color: #015a3c;}"
+        ".card__heading--placeholder {color: #015a3c;}",
+        "slider-component {transform: rotate(-2deg);}"
       ],
       "settings": {
         "title": "",
