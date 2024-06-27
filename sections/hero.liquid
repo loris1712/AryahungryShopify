@@ -1,8 +1,11 @@
 <style>
   .banner-wrapper {
     position: relative;
-    height: 756px;
+    height: fit-content;
     padding-inline: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .banner-img{
@@ -16,6 +19,9 @@
   .banner-text-container {
     position: absolute;
     z-index: 1000;
+    top: 10px;
+    right: 52px;
+
   }
 
   .banner-title {
@@ -58,7 +64,13 @@
     {
       "type": "text",
       "id": "banner_title",
-      "label": "Banner Title"
+      "label": "Banner Title",
+      "default": "UPCOMING RELEASE"
+    },
+    {
+        "type":"text",
+        "id": "date",
+        "label": "Release date"
     }
   ],
   "presets": [{ "name": "Hero Banner" }]
