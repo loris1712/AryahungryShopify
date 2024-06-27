@@ -45,23 +45,11 @@
           "settings": {
             "text": "<p>Arya Hamedani, also known as AryaHungry, boasts a diverse background, spanning from the Middle East to Canada, fuelled by a love for travel.. After a brief time in law school, Arya found his passion in cooking while living alone. He worked his way up from fast food to fine dining kitchens in Toronto and eventually started his own private chef service. A trip to Mexico inspired him to enter the world of social media food creation, and within two months, he gained over 1.25 million followers on In<\/p>"
           }
-        },
-        "button_EC9mDg": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_YeUULf",
-        "text_JMbyRX",
-        "button_EC9mDg"
+        "text_JMbyRX"
       ],
       "settings": {
         "desktop_content_position": "center",
