@@ -13,7 +13,8 @@
       "type": "hero",
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/Rectangle_82_1.png",
-        "banner_title": "Upcoming release"
+        "banner_title": "Upcoming release",
+        "date": "10 DAYS 23 HR 10 MIN 00 SEC"
       }
     },
     "slideshow": {
