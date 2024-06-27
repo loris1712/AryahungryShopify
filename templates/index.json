@@ -79,30 +79,25 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_TWPiyH": {
-      "type": "rich-text",
+    "follow_gqR7aY": {
+      "type": "follow",
       "blocks": {
-        "heading_rmrCTE": {
-          "type": "heading",
+        "social_HwwRx3": {
+          "type": "social",
           "settings": {
-            "heading": "FOLLOW ALONG FOR UPDATES",
-            "heading_size": "hxl"
+            "name": "Facebook",
+            "url": "shopify:\/\/products\/dont-fuck-it-up"
           }
         }
       },
       "block_order": [
-        "heading_rmrCTE"
+        "social_HwwRx3"
       ],
       "custom_css": [
-        "h2 {color: #015a3c; line-height: 69px; text-align: center; text-transform: uppercase;}"
+        "h2 {font-size: 48px; width: 520px; font-weight: 900;}"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "header": "FOLLOW ALONG FOR UPDATES"
       }
     }
   },
@@ -110,6 +105,6 @@
     "hero_w4Lm7h",
     "rich_text_FExpBf",
     "featured_collection_GtRaDg",
-    "rich_text_TWPiyH"
+    "follow_gqR7aY"
   ]
 }
