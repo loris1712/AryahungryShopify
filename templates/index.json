@@ -18,28 +18,6 @@
     },
     "slideshow": {
       "type": "slideshow",
-      "blocks": {
-        "slide-0": {
-          "type": "slide",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h2",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify:\/\/collections\/all",
-            "button_style_secondary": false,
-            "box_align": "top-right",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 20,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "left"
-          }
-        }
-      },
-      "block_order": [
-        "slide-0"
-      ],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
