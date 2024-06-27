@@ -11,6 +11,10 @@
     text-align: center;
     text-transform: uppercase;
     font-family: var(--font-heading-family);
+    font-size: 48px;
+    width: 520px;
+      font-weight:900;
+
   }
 
   .social-items {
@@ -26,8 +30,10 @@
   <h2 class="heading">{{ section.settings.header }}</h2>
 
   <div class="social-items">
-    {% for social in section.blocks.settings %}
-      <p>{{ social.name }}</p>
+    {% for block in section.blocks %}
+      <a href="{{block.settings.url}}">
+        {{block.settings.name}}
+      </a>
     {% endfor %}
   </div>
 </div>
@@ -58,7 +64,7 @@
           "label": "Name"
         },
         {
-          "type": "url",
+          "type": "text",
           "id": "url",
           "label": "Link"
         }
