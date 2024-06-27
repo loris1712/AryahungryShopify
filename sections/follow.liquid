@@ -1,20 +1,19 @@
 <style>
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .heading {
     color: #015a3c;
     line-height: 69px;
     text-align: center;
     text-transform: uppercase;
-        font-family: var(--font-heading-family);
-
+    font-family: var(--font-heading-family);
   }
 
-  .social-items{
+  .social-items {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,23 +22,21 @@
   }
 </style>
 
-
 <div class="wrapper">
-    <h2 class="heading">{{ section.settings.header }}</h2>
+  <h2 class="heading">{{ section.settings.header }}</h2>
 
-    <div class="social-items">
-        {% for social in section.blocks.settings %}
-        <p>{{social.name}}</p>
+  <div class="social-items">
+    {% for social in section.blocks.settings %}
+      <p>{{ social.name }}</p>
     {% endfor %}
-    </div>
-
+  </div>
 </div>
 
 {% schema %}
 {
-  "name": "Follow",
+  "name": "Follow Section",
   "tag": "section",
-  "class": "follow-section",
+  "class": "follow",
   "limit": 1,
   "settings": [
     {
