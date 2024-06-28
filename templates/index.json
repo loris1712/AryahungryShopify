@@ -90,6 +90,14 @@
             "url": "https:\/\/twitter.com"
           }
         },
+        "social_PHwm6T": {
+          "type": "social",
+          "settings": {
+            "name": "Instagram",
+            "icon": "shopify:\/\/shop_images\/Group_1_1.png",
+            "url": ""
+          }
+        },
         "social_HwwRx3": {
           "type": "social",
           "settings": {
@@ -98,19 +106,20 @@
             "url": "shopify:\/\/products\/dont-fuck-it-up"
           }
         },
-        "social_PHwm6T": {
+        "social_fqmDJf": {
           "type": "social",
           "settings": {
-            "name": "Instagram",
-            "icon": "shopify:\/\/shop_images\/Group_1_1.png",
+            "name": "Youtube",
+            "icon": "shopify:\/\/shop_images\/Negative.png",
             "url": ""
           }
         }
       },
       "block_order": [
         "social_MnWUUU",
+        "social_PHwm6T",
         "social_HwwRx3",
-        "social_PHwm6T"
+        "social_fqmDJf"
       ],
       "custom_css": [
 
