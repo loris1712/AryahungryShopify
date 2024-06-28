@@ -51,7 +51,7 @@
 
 <script src="{{ 'custom-form.js' | asset_url }}" defer="defer"></script>
 
-<form  class="form-wrapper page-width" onsubmit="onSubmit()">
+<div  class="form-wrapper page-width">
     <h2 class="form-header">
         {{section.settings.headerText}}
     </h2>
@@ -61,8 +61,8 @@
         <input name="phone" type="tel" placeholder="phone"/>
     </div>
 
-    <button id="{{section.id}}" type="submit" class="submit-button">{{section.settings.buttonText}}</button>
-</form>
+    <button id="{{section.id}}" onclick="onSubmit()" type="submit" class="submit-button">{{section.settings.buttonText}}</button>
+</div>
 
 {% schema %}
 {
