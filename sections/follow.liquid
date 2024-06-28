@@ -14,10 +14,9 @@
     font-family: var(--font-heading-family);
     font-size: 48px;
     width: 520px;
-      font-weight:900;
-      margin: 0;
-      padding: 0;
-
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
   }
 
   .social-items {
@@ -27,14 +26,41 @@
     justify-content: center;
     gap: 8px;
   }
+
+  .social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .icon {
+    height: 54px;
+    width: 54px;
+    object-fit: contain;
+  }
+
+  .name {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #015a3c;
+  }
 </style>
 
 <div class="wrapper">
   <h2 class="heading">{{ section.settings.header }}</h2>
   <div class="social-items">
     {% for block in section.blocks %}
-      <a href="{{block.settings.url}}">
-        {{block.settings.name}}
+      <a class="social-item" href="{{block.settings.url}}">
+        {% if block.settings.icon != blank %}
+          <img
+            class="icon"
+            height="54"
+            width="54"
+            src="{{block.settings.icon  | image_url: width: 54}}"
+          >
+        {% endif %}
+        <p class="name">{{ block.settings.name }}</p>
       </a>
     {% endfor %}
   </div>
@@ -66,7 +92,7 @@
           "label": "Name"
         },
         {
-          "type": "text",
+          "type": "image_picker",
           "id": "icon",
           "label": "Icon"
         },
