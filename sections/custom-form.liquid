@@ -1,3 +1,25 @@
+{% stylesheet %}
+    .form-wrapper{
+    }
+
+    .submit-button{
+        background: #015A3C;
+        height: 65px;
+        width: 228px;
+        border: none;
+        border-radius: 9px;
+        color: #fff;
+    }
+{% endstylesheet %}
+
+<form class="form-wrapper page-width">
+    <h2>
+        {{section.settings.headerText}}
+    </h2>
+
+    <button id="{{section.id}}" type="submit" class="submit-button">{{section.settings.buttonText}}</button>
+</form>
+
 {% schema %}
 {
   "name": "Contact Us Form",
