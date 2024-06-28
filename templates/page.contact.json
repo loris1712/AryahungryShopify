@@ -22,6 +22,9 @@
     },
     "custom_form_BWx9QQ": {
       "type": "custom-form",
+      "custom_css": [
+        ".contact-us-form {margin-top: 10rem;}"
+      ],
       "settings": {
         "headerText": "FOR MERCHANDISE",
         "buttonText": "SUBMIT"
@@ -30,7 +33,7 @@
     "custom_form_iiAYRG": {
       "type": "custom-form",
       "custom_css": [
-        ".contact-us-form {margin-top:10rem; }"
+        ".contact-us-form {margin-top: 10rem;}"
       ],
       "settings": {
         "headerText": "FOR BUSINESS",
