@@ -48,9 +48,9 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         <div class="button-container">
-                  <a href="{{ block.settings.button_1_link }}" class="custom-button">{{ block.settings.button_1_text }}</a>
-                  <a href="{{ block.settings.button_2_link }}" class="custom-button">{{ block.settings.button_2_text }}</a>
-                </div>
+            <a href="{{ block.settings.button_1_link }}" class="custom-button">Ciao</a>
+            <a href="{{ block.settings.button_2_link }}" class="custom-button">Ciao</a>
+        </div>
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
