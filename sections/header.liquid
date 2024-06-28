@@ -50,7 +50,8 @@
 
   .list-menu--inline {
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 2rem;
   }
 
   summary.list-menu__item {
@@ -61,6 +62,11 @@
     display: flex;
     align-items: center;
     line-height: calc(1 + 0.3 / var(--font-body-scale));
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 8px 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
   }
 
   .list-menu__item--link {
