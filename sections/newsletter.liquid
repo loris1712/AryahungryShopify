@@ -51,11 +51,6 @@
           {% render block %}
         {%- when 'heading' -%}
 
-                <div class="button-container">
-                  <a href="{{ block.settings.button_1_link }}" class="custom-button">{{ block.settings.button_1_text }}</a>
-                  <a href="{{ block.settings.button_2_link }}" class="custom-button">{{ block.settings.button_2_text }}</a>
-                </div>
-
           <h2
             class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
