@@ -93,6 +93,7 @@
           "type": "social",
           "settings": {
             "name": "Twitter",
+            "icon": "shopify:\/\/shop_images\/DESIGN_1.png",
             "url": "https:\/\/twitter.com"
           }
         }
