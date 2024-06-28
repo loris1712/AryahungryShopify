@@ -29,6 +29,9 @@
     },
     "custom_form_iiAYRG": {
       "type": "custom-form",
+      "custom_css": [
+        ".contact-us-form {margin-top:10rem; }"
+      ],
       "settings": {
         "headerText": "FOR BUSINESS",
         "buttonText": "SUBMIT"
