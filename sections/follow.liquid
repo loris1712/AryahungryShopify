@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5vh;
+    margin-bottom: 5rem;
   }
   .heading {
     color: #015a3c;
@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin-top: 4rem;
   }
 
   .social-item {
@@ -36,7 +37,7 @@
     text-decoration: none;
   }
   .icon {
-    height: 54px;
+    height: 40px;
     width: 54px;
     object-fit: contain;
   }
@@ -45,7 +46,8 @@
     font-size: 14px;
     text-transform: uppercase;
     color: #015a3c;
-    font-weight: 900;
+    font-weight: 400;
+    margin: -10px 0 0 0;
   }
 </style>
 
@@ -57,7 +59,7 @@
         {% if block.settings.icon != blank %}
           <img
             class="icon"
-            height="54"
+            height="40"
             width="54"
             src="{{block.settings.icon  | image_url: width: 54}}"
           >
