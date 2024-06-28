@@ -82,24 +82,44 @@
     "follow_gqR7aY": {
       "type": "follow",
       "blocks": {
+        "social_MnWUUU": {
+          "type": "social",
+          "settings": {
+            "name": "TIKTOK",
+            "icon": "shopify:\/\/shop_images\/DESIGN_1.png",
+            "url": "https:\/\/twitter.com"
+          }
+        },
+        "social_PHwm6T": {
+          "type": "social",
+          "settings": {
+            "name": "Instagram",
+            "icon": "shopify:\/\/shop_images\/Group_1_1.png",
+            "url": ""
+          }
+        },
         "social_HwwRx3": {
           "type": "social",
           "settings": {
             "name": "Facebook",
+            "icon": "shopify:\/\/shop_images\/Vector_1.png",
             "url": "shopify:\/\/products\/dont-fuck-it-up"
           }
         },
-        "social_MnWUUU": {
+        "social_fqmDJf": {
           "type": "social",
           "settings": {
-            "name": "Twitter",
-            "url": "https:\/\/twitter.com"
+            "name": "Youtube",
+            "icon": "shopify:\/\/shop_images\/Negative.png",
+            "url": ""
           }
         }
       },
       "block_order": [
+        "social_MnWUUU",
+        "social_PHwm6T",
         "social_HwwRx3",
-        "social_MnWUUU"
+        "social_fqmDJf"
       ],
       "custom_css": [
 
