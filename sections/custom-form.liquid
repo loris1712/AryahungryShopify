@@ -49,14 +49,16 @@
     }
 </style>
 
-<form class="form-wrapper page-width">
+<script src="{{ 'custom-form.js' | asset_url }}" defer="defer"></script>
+
+<form  class="form-wrapper page-width" onsubmit="onSubmit()">
     <h2 class="form-header">
         {{section.settings.headerText}}
     </h2>
 
     <div class="form-inputs">
-        <input type="text" placeholder="name"/>
-        <input type="tel" placeholder="phone"/>
+        <input name="name" type="text" placeholder="name"/>
+        <input name="phone" type="tel" placeholder="phone"/>
     </div>
 
     <button id="{{section.id}}" type="submit" class="submit-button">{{section.settings.buttonText}}</button>
