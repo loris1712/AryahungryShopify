@@ -75,6 +75,11 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
+                <div class="button-container">
+                  <a href="{{ block.settings.button_1_link }}" class="custom-button">{{ block.settings.button_1_text }}</a>
+                  <a href="{{ block.settings.button_2_link }}" class="custom-button">{{ block.settings.button_2_text }}</a>
+                </div>
+                
                 {%- if block.settings.heading != blank -%}
                   <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
