@@ -74,6 +74,10 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
+*{
+    font-family: var(--font-heading-family);
+}
+
 /* base */
 
 .page-width {

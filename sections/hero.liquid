@@ -6,9 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: var(--page-width);
   }
 
   .banner-img {
+    z-index: 1;
     height: auto;
     width: 100%;
     object-fit: contain;
@@ -18,7 +20,7 @@
 
   .banner-text-container {
     position: absolute;
-    z-index: 1000;
+    z-index: 2;
     top: 2rem;
     right: 8rem;
     display: flex;
@@ -51,7 +53,7 @@
   }
 </style>
 
-<div class="banner-wrapper">
+<div class="banner-wrapper page-width">
   <img
     class="banner-img"
     srcset="{{ section.settings.banner_image | image_url: width:760 }}, {{ section.settings.banner_image | image_url: width: 760 }} 2x"

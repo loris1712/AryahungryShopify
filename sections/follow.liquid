@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
+    text-decoration: none;
   }
   .icon {
     height: 54px;
@@ -44,10 +45,11 @@
     font-size: 14px;
     text-transform: uppercase;
     color: #015a3c;
+    font-weight: 900;
   }
 </style>
 
-<div class="wrapper">
+<div class="wrapper page-width">
   <h2 class="heading">{{ section.settings.header }}</h2>
   <div class="social-items">
     {% for block in section.blocks %}
