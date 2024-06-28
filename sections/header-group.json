@@ -25,6 +25,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
         "show_line_separator": true,
@@ -38,7 +39,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".header{display:flex; align-items: center; justify-content: space-between;}",
+        ".header {display: flex; align-items: center; justify-content: space-between;}",
         ".header__icons {display: none;}",
         "@media screen and (min-width: 990px) {.header--middle-left {grid-template-areas: \"heading navigation icons\"; grid-template-columns: auto auto 1fr; column-gap: 2rem; }}"
       ],
