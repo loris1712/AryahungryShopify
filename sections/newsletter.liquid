@@ -45,12 +45,13 @@
 
 <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    <div class="button-container">
+            <a href="" class="custom-button">Ciao</a>
+            <a href="" class="custom-button">Ciao</a>
+        </div>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
-        <div class="button-container">
-            <a href="{{ block.settings.button_1_link }}" class="custom-button">Ciao</a>
-            <a href="{{ block.settings.button_2_link }}" class="custom-button">Ciao</a>
-        </div>
+        
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
