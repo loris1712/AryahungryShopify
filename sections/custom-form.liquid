@@ -24,9 +24,10 @@
         width: 100%;
         outline: none;
         padding-inline: 1rem;
+        border-radius: 8px;
     }
     .form-inputs::placeholder{
-        color: #015A3C;
+        color: #015A3C!important;
         font-weight: 500;
         text-transform: uppercase;
     }
@@ -38,6 +39,7 @@
         border: none;
         border-radius: 9px;
         color: #fff;
+        margin-top: 2rem;
 
     }
 </style>
@@ -48,8 +50,8 @@
     </h2>
 
     <div class="form-inputs">
-        <input type="text" placeholder="NAME"/>
-        <input type="tel" placeholder="PHONE"/>
+        <input type="text" placeholder="name"/>
+        <input type="tel" placeholder="phone"/>
     </div>
 
     <button id="{{section.id}}" type="submit" class="submit-button">{{section.settings.buttonText}}</button>
