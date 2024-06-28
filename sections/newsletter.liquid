@@ -7,6 +7,34 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+
+    .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Spazio tra i bottoni */
+    margin-top: 20px; /* Spazio sopra la sezione dei bottoni */
+  }
+  
+  .custom-button {
+    flex: 1; /* Per occupare tutto lo spazio orizzontale disponibile */
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 200px;
+    padding: 10px 20px; /* Giusto padding */
+    border: 2px solid black; /* Bordo per visibilità */
+    text-align: center;
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; /* Transizione per l'hover */
+  }
+
+  .custom-button:hover {
+    background-color: #f0f0f0; /* Colore di sfondo al passaggio del mouse */
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -22,6 +50,12 @@
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
+
+                <div class="button-container">
+                  <a href="{{ block.settings.button_1_link }}" class="custom-button">{{ block.settings.button_1_text }}</a>
+                  <a href="{{ block.settings.button_2_link }}" class="custom-button">{{ block.settings.button_2_text }}</a>
+                </div>
+
           <h2
             class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
