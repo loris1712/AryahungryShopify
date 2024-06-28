@@ -11,29 +11,25 @@
     .button-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Spazio tra i bottoni */
-    margin-top: 20px; /* Spazio sopra la sezione dei bottoni */
+    gap: 20px;
+    margin-top: 20px;
   }
   
   .custom-button {
-    flex: 1; /* Per occupare tutto lo spazio orizzontale disponibile */
+    flex: 1;
     background-color: white;
     color: #015A3C;
     text-transform: uppercase;
     border-radius: 200px;
-    padding: 10px 20px; /* Giusto padding */
-    border: 2px solid black; /* Bordo per visibilità */
+    padding: 10px 20px;
     text-align: center;
-    text-decoration: none; /* Rimuove la sottolineatura dei link */
+    text-decoration: none; 
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s; /* Transizione per l'hover */
+    transition: background-color 0.3s; 
   }
 
-  .custom-button:hover {
-    background-color: #f0f0f0; /* Colore di sfondo al passaggio del mouse */
-  }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
