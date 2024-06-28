@@ -51,7 +51,7 @@
       "type": "featured-collection",
       "custom_css": [
         ".card__heading--placeholder {color: #015a3c;}",
-        "slider-component {transform: rotate(-2deg) !important; margin: 8rem auto; display:flex; align-items:center; align-self:center;}"
+        "slider-component {transform: rotate(-2deg) !important; margin: 8rem auto; display: flex; align-items: center; align-self: center;}"
       ],
       "settings": {
         "title": "",
@@ -61,11 +61,11 @@
         "description_style": "body",
         "collection": "",
         "products_to_show": 6,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -73,8 +73,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
