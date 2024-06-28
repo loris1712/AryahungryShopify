@@ -26,10 +26,18 @@
         "headerText": "FOR MERCHANDISE",
         "buttonText": "SUBMIT"
       }
+    },
+    "custom_form_iiAYRG": {
+      "type": "custom-form",
+      "settings": {
+        "headerText": "FOR BUSINESS",
+        "buttonText": "SUBMIT"
+      }
     }
   },
   "order": [
     "main",
-    "custom_form_BWx9QQ"
+    "custom_form_BWx9QQ",
+    "custom_form_iiAYRG"
   ]
 }
