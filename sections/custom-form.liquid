@@ -1,5 +1,15 @@
 {% stylesheet %}
     .form-wrapper{
+
+    }
+
+    .form-header{
+        margin:0;
+        padding:0;
+        text-align:center;
+        color:#015A3C;
+        font-family: var(--font-heading-family);
+
     }
 
     .submit-button{
@@ -9,11 +19,13 @@
         border: none;
         border-radius: 9px;
         color: #fff;
+        font-family: var(--font-heading-family);
+
     }
 {% endstylesheet %}
 
 <form class="form-wrapper page-width">
-    <h2>
+    <h2 class="form-header">
         {{section.settings.headerText}}
     </h2>
 
@@ -42,7 +54,8 @@
     {
       "type": "text",
       "id": "buttonText",
-      "label": "Header Text"
+      "label": "Button Text",
+      "default": "SUBMIT"
     }
   ]
 }
