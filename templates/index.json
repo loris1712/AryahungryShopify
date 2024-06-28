@@ -97,11 +97,20 @@
             "icon": "shopify:\/\/shop_images\/Vector_1.png",
             "url": "shopify:\/\/products\/dont-fuck-it-up"
           }
+        },
+        "social_PHwm6T": {
+          "type": "social",
+          "settings": {
+            "name": "Instagram",
+            "icon": "shopify:\/\/shop_images\/Group_1_1.png",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "social_MnWUUU",
-        "social_HwwRx3"
+        "social_HwwRx3",
+        "social_PHwm6T"
       ],
       "custom_css": [
 
