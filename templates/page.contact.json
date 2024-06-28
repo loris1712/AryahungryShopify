@@ -39,11 +39,21 @@
         "headerText": "FOR BUSINESS",
         "buttonText": "SUBMIT"
       }
+    },
+    "custom_liquid_MnMyhf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "custom_form_BWx9QQ",
-    "custom_form_iiAYRG"
+    "custom_form_iiAYRG",
+    "custom_liquid_MnMyhf"
   ]
 }
