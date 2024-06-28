@@ -18,7 +18,6 @@
          {% if link.child_active %} header__active-menu-item{% endif %}"
 >
                 <span
-                  
                 >
                   {{- link.title | escape -}}
                 </span>
@@ -73,15 +72,13 @@
           <a
             id="HeaderMenu-{{ link.handle }}"
             href="{{ link.url }}"
-            class="header__menu-item list-menu__item link link--text focus-inset"
+            class="header__menu-item list-menu__item link focus-inset
+         {% if link.child_active %} header__active-menu-item{% endif %}"
             {% if link.current %}
               aria-current="page"
             {% endif %}
           >
             <span
-              {%- if link.current %}
-                class="header__active-menu-item"
-              {% endif %}
             >
               {{- link.title | escape -}}
             </span>
