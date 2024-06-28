@@ -82,13 +82,6 @@
     "follow_gqR7aY": {
       "type": "follow",
       "blocks": {
-        "social_HwwRx3": {
-          "type": "social",
-          "settings": {
-            "name": "Facebook",
-            "url": "shopify:\/\/products\/dont-fuck-it-up"
-          }
-        },
         "social_MnWUUU": {
           "type": "social",
           "settings": {
@@ -96,11 +89,19 @@
             "icon": "shopify:\/\/shop_images\/DESIGN_1.png",
             "url": "https:\/\/twitter.com"
           }
+        },
+        "social_HwwRx3": {
+          "type": "social",
+          "settings": {
+            "name": "Facebook",
+            "icon": "shopify:\/\/shop_images\/Vector_1.png",
+            "url": "shopify:\/\/products\/dont-fuck-it-up"
+          }
         }
       },
       "block_order": [
-        "social_HwwRx3",
-        "social_MnWUUU"
+        "social_MnWUUU",
+        "social_HwwRx3"
       ],
       "custom_css": [
 
