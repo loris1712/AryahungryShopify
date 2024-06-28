@@ -25,11 +25,16 @@
         outline: none;
         padding-inline: 1rem;
         border-radius: 8px;
+         box-shadow: none!important;
     }
-    .form-inputs::placeholder{
+    .form-inputs input::placeholder{
         color: #015A3C!important;
         font-weight: 500;
         text-transform: uppercase;
+    }
+
+    .form-inputs input:active{
+        box-shadow: none;
     }
 
     .submit-button{
