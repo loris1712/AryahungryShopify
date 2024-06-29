@@ -29,6 +29,9 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+        ".shopify-payment-button__button {background: #015a3c;}"
+      ],
       "settings": {
         "products_per_page": 24,
         "columns_desktop": 3,
