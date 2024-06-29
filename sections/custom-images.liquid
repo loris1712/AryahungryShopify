@@ -54,6 +54,7 @@
     position: absolute;
     transition: all 0.3s ease;
     top: 60%;
+    z-index:1;
     right: 0%;
   }
   
@@ -66,9 +67,9 @@
 
 <div class="custom-images-wrapper">
   <div class="custom-image">
-    <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="First Image" width="200px" height="200px">
+    <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="First Image" width="50%" height="50%">
   </div>
   <div class="custom-image-2">
-    <img src="{{ section.settings.image_2 | img_url: 'master' }}" alt="Second Image" width="220px" height="200px">
+    <img src="{{ section.settings.image_2 | img_url: 'master' }}" alt="Second Image" width="50%" height="50%">
   </div>
 </div>
