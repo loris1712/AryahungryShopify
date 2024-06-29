@@ -259,8 +259,15 @@ h5,
 .h3,
 .h4,
 .h5 {
-  src: url('{{ 'Integral CF' | asset_url }}') format('woff2'),
-         url('{{ 'IntegralCF-Heavy.woff' | asset_url }}') format('woff');
+  font-family: 'Integral CF', sans-serif;
+}
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('{{ 'IntegralCF-Heavy.woff' | asset_url }}') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 .hxxl {
