@@ -259,7 +259,8 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: var(--font-heading-family);
+  font-family: 'Integral CF';
+        src: url('{{ 'IntegralCF-Heavy.woff' | asset_url }}) format('woff');
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -550,6 +551,9 @@ hr {
   text-decoration: none;
   color: currentColor;
   display: block;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 24px;
 }
 
 .placeholder {
