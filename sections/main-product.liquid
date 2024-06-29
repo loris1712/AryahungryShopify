@@ -250,9 +250,9 @@
                   -%}
                   {% # theme-check-enable %}
                   <select class="size-select">
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
+                    {% for size in product.metafields.size %}
+                      <option value="{{size}}">{{size}}</option>
+                    {% endfor %}
                   </select>
                   <div class="price-per-item__container">
                     <div class="product-quantity-wrapper">
