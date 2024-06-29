@@ -2,6 +2,7 @@
   .form-wrapper {
     max-width: 849px;
     margin: 0 auto;
+    animation: var(--animation-slide-in);
   }
 
   .form-header {
@@ -74,16 +75,16 @@
     color: #fff;
     margin-top: 2rem;
   }
-  @media screen and (max-width: 749px){
-      .form-header{
-        font-size: 24px;
-      }
+  @media screen and (max-width: 749px) {
+    .form-header {
+      font-size: 24px;
+    }
   }
 </style>
 
 <script src="{{ 'custom-form.js' | asset_url }}" defer="defer"></script>
 
-<div class="form-wrapper page-width">
+<div class="form-wrapper page-width ">
   <h2 class="form-header">
     {{ section.settings.headerText }}
   </h2>
