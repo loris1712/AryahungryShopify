@@ -22,17 +22,6 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    <style>
-      body {
-        cursor: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/cursor.png?v=1719686735'), auto;
-      }
-      
-      a {
-        cursor: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/cursor.png?v=1719686735'), pointer;
-      }
-
-    </style>
-
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
@@ -253,6 +242,14 @@
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
+      }
+
+       body {
+        cursor: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/cursor.png?v=1719686735'), auto;
+      }
+      
+      a {
+        cursor: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/cursor.png?v=1719686735'), pointer;
       }
 
       @media screen and (min-width: 750px) {
