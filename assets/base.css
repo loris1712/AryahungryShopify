@@ -260,6 +260,7 @@ h5,
 .h4,
 .h5 {
   font-family: 'Integral CF', sans-serif;
+  line-height: 1em;
 }
 
 @font-face {
