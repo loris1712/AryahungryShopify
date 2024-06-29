@@ -38,6 +38,9 @@
         "heading_YeUULf",
         "text_JMbyRX"
       ],
+      "custom_css": [
+        ".rich-text__text p{line-height: 22px;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -130,20 +133,6 @@
     },
     "17196734253fa80861": {
       "type": "apps",
-      "blocks": {
-        "tiktok_feed_feed_hUHG8X": {
-          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/feed\/0809f857-6257-419d-a38a-2a39da17fbd1",
-          "settings": {
-            "tiktokfeed_heading": "Tiktok Feeds",
-            "feeds_heading_alignment": "left",
-            "feeds_padding": 0,
-            "feeds_margin": 0
-          }
-        }
-      },
-      "block_order": [
-        "tiktok_feed_feed_hUHG8X"
-      ],
       "custom_css": [
 
       ],
