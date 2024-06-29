@@ -1,88 +1,93 @@
 <style>
-     .form-wrapper{
-        max-width: 849px;
-        margin: 0 auto;
-    }
+  .form-wrapper {
+    max-width: 849px;
+    margin: 0 auto;
+  }
 
-    .form-header{
-        margin:0;
-        padding:0;
-        text-align:center;
-        color:#015A3C;
-        font-family: var(--font-heading-family);
-        margin: 2.5rem 0;
+  .form-header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #015a3c;
+    font-family: var(--font-heading-family);
+    margin: 2.5rem 0;
+  }
 
-    }
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
 
-    .form-inputs{
-        display:flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 4rem;
-    }
+  .form-inputs input {
+    border: 2px solid #015a3c;
+    height: 44px;
+    width: 100%;
+    outline: none;
+    padding-inline: 1rem;
+    border-radius: 8px;
+    box-shadow: none !important;
+    caret-color: #015a3c;
+    color: #015a3c;
+  }
 
-    .form-inputs input{
-        border: 2px solid #015A3C;
-        height: 44px;
-        width: 100%;
-        outline: none;
-        padding-inline: 1rem;
-        border-radius: 8px;
-         box-shadow: none!important;
-    }
+  .form-inputs textarea {
+    border: 2px solid #015a3c;
+    height: 104px;
+    width: 100%;
+    outline: none;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: none !important;
+    caret-color: #015a3c;
+    color: #015a3c;
+  }
+  .form-inputs input::placeholder {
+    color: #015a3c !important;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 
-    .form-inputs textarea{
-        border: 2px solid #015A3C;
-        height: 104px;
-        width: 100%;
-        outline: none;
-        padding: 1rem;
-        border-radius: 8px;
-         box-shadow: none!important;
-    }
-    .form-inputs input::placeholder{
-        color: #015A3C!important;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+  .form-inputs textarea::placeholder {
+    color: #015a3c !important;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 
-    .form-inputs textarea::placeholder{
-        color: #015A3C!important;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+  .form-inputs input:active,
+  .form-inputs textarea:active {
+    box-shadow: none;
+  }
 
-    .form-inputs input:active, .form-inputs textarea:active{
-        box-shadow: none;
-    }
-
-    .submit-button{
-        background: #015A3C;
-        height: 44px;
-        width: 228px;
-        border: none;
-        border-radius: 9px;
-        font-size: 14px;
-        color: #fff;
-        margin-top: 2rem;
-
-    }
+  .submit-button {
+    background: #015a3c;
+    height: 44px;
+    width: 228px;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 2rem;
+  }
 </style>
 
 <script src="{{ 'custom-form.js' | asset_url }}" defer="defer"></script>
 
-<div  class="form-wrapper page-width">
-    <h2 class="form-header">
-        {{section.settings.headerText}}
-    </h2>
+<div class="form-wrapper page-width">
+  <h2 class="form-header">
+    {{ section.settings.headerText }}
+  </h2>
 
-    <div class="form-inputs">
-        <input id="form-input-name" name="name" type="text" placeholder="name"/>
-        <input id="form-input-phone" name="phone" type="tel" placeholder="phone"/>
-        <textarea id="form-input-message" placeholder="message"></textarea>
-    </div>
+  <div class="form-inputs">
+    <input id="form-input-name" name="name" type="text" placeholder="name">
+    <input id="form-input-phone" name="phone" type="tel" placeholder="phone">
+    <textarea id="form-input-message" placeholder="message"></textarea>
+  </div>
 
-    <button id="{{section.id}}" onclick="onSubmit()" type="submit" class="submit-button">{{section.settings.buttonText}}</button>
+  <button id="{{section.id}}" onclick="onSubmit()" type="submit" class="submit-button">
+    {{ section.settings.buttonText }}
+  </button>
 </div>
 
 {% schema %}
@@ -109,9 +114,9 @@
   ],
   "settings": [
     {
-        "type": "text",
-        "id": "emailDestination",
-        "label": "Send To(Email address)"
+      "type": "text",
+      "id": "emailDestination",
+      "label": "Send To(Email address)"
     },
     {
       "type": "text",
