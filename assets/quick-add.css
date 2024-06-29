@@ -234,11 +234,11 @@
 }
 
 .quick-add-modal__content-info {
-  --modal-padding: 1.5rem;
+  --modal-padding: 0.5rem;
   padding-right: 4.4rem;
   display: flex;
   overflow-y: auto;
-  padding: var(--modal-padding);
+  padding-bottom: var(--modal-padding);
   height: 100%;
   gap: 1rem;
 }
