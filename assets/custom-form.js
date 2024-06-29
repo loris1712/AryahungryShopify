@@ -6,9 +6,9 @@ function onSubmit() {
   
   const payload = {
     emailAddress,
-    name,
-    phone,
-    message,
+    name: name.value,
+    phone: phone.value,
+    message: message.value,
   };
 
   console.log(payload);
