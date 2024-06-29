@@ -126,7 +126,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "cart_color_scheme": "scheme-1",
+    "cart_color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -426,7 +426,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-
+      "body {cursor: url('https:\/\/cdn.shopify.com\/s\/files\/1\/0884\/5131\/8076\/files\/cursor.png?v=1719686735'), auto; }",
+      " a {cursor: url('https:\/\/cdn.shopify.com\/s\/files\/1\/0884\/5131\/8076\/files\/cursor.png?v=1719686735'), pointer; }"
     ]
   }
 }
