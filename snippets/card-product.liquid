@@ -333,7 +333,7 @@
         </button>
         
         <div id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info">
-          <!-- Selettore di colore -->
+          <!-- Colors -->
           <select name="color" id="ColorSelector-{{ card_product.id }}" class="product-form__input">
             {% for option in card_product.options_with_values %}
               {% if option.name == 'Color' %}
@@ -344,14 +344,14 @@
             {% endfor %}
           </select>
 
-          <!-- Selettore di variante -->
+          <!-- Variants -->
           <select name="variant" id="VariantSelector-{{ card_product.id }}" class="product-form__input">
             {% for variant in card_product.variants %}
               <option value="{{ variant.id }}">{{ variant.title }}</option>
             {% endfor %}
           </select>
 
-          <!-- Selettore di quantità -->
+          <!-- Quantity -->
           <div class="quantity-selector">
             <div class="quantity-input">
               <button type="button" class="quantity-button quantity-button-minus">-</button>
