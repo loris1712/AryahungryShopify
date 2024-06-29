@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
-    margin-bottom: -8px;
 }
 
 .size-select{
@@ -28,11 +27,14 @@
 
 .quantity-wrapper input{
     border: none;
-    background-color: none;
+    background: none;
     color: #015A3C;
     caret-color: #015A3C;
     width: fit-content;
     outline: none;
+    min-width: 30px;
+    text-align: center;
+    padding-left: 4px;
 }
 
 .quantity-wrapper button {
