@@ -90,7 +90,7 @@
     <textarea id="{{section.id}}-form-input-message" required placeholder="message" name="message"></textarea>
   </div>
 
-  <button id="{{section.id}}" onclick="onSubmit({{section.id}})" type="submit" class="submit-button">
+  <button id="{{section.id}}" onclick="onSubmit('{{section.id}}')" type="submit" class="submit-button">
     {{ section.settings.buttonText }}
   </button>
 </div>
