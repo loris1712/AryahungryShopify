@@ -11,6 +11,9 @@
   "sections": {
     "hero_w4Lm7h": {
       "type": "hero",
+      "custom_css": [
+        ".banner-img {border-radius: 12px;}"
+      ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/image.png",
         "banner_title": "Upcoming release",
