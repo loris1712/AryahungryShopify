@@ -2769,6 +2769,14 @@ details[open] > .header__submenu {
   color: rgba(var(--color-foreground), 0.75);
 }
 
+      body {
+        cursor: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/cursor.png?v=1719686735'), auto;
+      }
+      
+      a {
+        cursor: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/cursor.png?v=1719686735'), pointer;
+      }
+
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
 }
