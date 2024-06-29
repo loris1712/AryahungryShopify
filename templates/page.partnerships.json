@@ -62,6 +62,10 @@
     "custom_images": {
       "type": "custom-images",
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/imagepartner.png",
+        "image_2": "shopify:\/\/shop_images\/imagepartner2.png",
+        "image_1_offset": 0,
+        "image_2_offset": 0
       }
     }
   },
