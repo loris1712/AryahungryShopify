@@ -78,8 +78,7 @@
 
 <script src="{{ 'custom-form.js' | asset_url }}" defer="defer"></script>
 
-{% form 'contact', id: '{{section.id}}-ContactForm' %}
-  <div class="form-wrapper page-width">
+  <form  class="form-wrapper page-width">
     <h2 class="form-header">
       {{ section.settings.headerText }}
     </h2>
@@ -94,8 +93,7 @@
     <button id="{{section.id}}" onclick="onSubmit({{section.id}})" type="submit" class="submit-button">
       {{ section.settings.buttonText }}
     </button>
-  </div>
-{% endform %}
+  </form>
 
 {% schema %}
 {
