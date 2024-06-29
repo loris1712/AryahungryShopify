@@ -12,12 +12,52 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 28
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_cYGLaK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_T8hKe8": {
+          "type": "heading",
+          "settings": {
+            "heading": "PARTNERSHIPS",
+            "heading_size": "h1"
+          }
+        },
+        "text_xwNJqk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ARYA READY TO WORK TOGETHER<\/p>"
+          }
+        },
+        "button_KHqxYX": {
+          "type": "button",
+          "settings": {
+            "button_label": "REACH OUT",
+            "button_link": "\/pages\/contact",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_T8hKe8",
+        "text_xwNJqk",
+        "button_KHqxYX"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_cYGLaK"
   ]
 }
