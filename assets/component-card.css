@@ -468,7 +468,7 @@
 .card-information {
   width: 100%;
   text-align: center;
-  font-weight: var(--font-heading-weight);
+  font-weight: 400;
 }
 
 .card-information > * {
