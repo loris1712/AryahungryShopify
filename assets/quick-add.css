@@ -108,8 +108,8 @@
     width: 100%;
     outline: none;
     padding-inline: 1rem;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     box-shadow: none !important;
     caret-color: #015a3c;
     color: #015a3c;
