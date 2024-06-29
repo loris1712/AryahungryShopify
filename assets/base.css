@@ -1868,6 +1868,7 @@ input[type='checkbox'] {
   border-radius: var(--inputs-radius);
   height: 48px;
   min-height: 48px;
+  max-height: 48px;
 }
 
 .quantity:after {
