@@ -244,6 +244,17 @@
         font-weight: var(--font-body-weight);
       }
 
+      @font-face {
+        font-family: 'Integral CF';
+        src: url('{{ 'IntegralCF-Heavy.woff' | asset_url }}) format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+  
+      body, h1, h2, h3, h4, h5, h6, p, a, span, div {
+        font-family: 'Integral CF', sans-serif;
+      }
+
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
