@@ -78,22 +78,22 @@
 
 <script src="{{ 'custom-form.js' | asset_url }}" defer="defer"></script>
 
-  <form  class="form-wrapper page-width">
-    <h2 class="form-header">
-      {{ section.settings.headerText }}
-    </h2>
+<form class="form-wrapper page-width">
+  <h2 class="form-header">
+    {{ section.settings.headerText }}
+  </h2>
 
-    <div class="form-inputs">
-      <input id="{{section.id}}-destinationEmail" value="{{section.settings.emailDestination}}" class="hidden">
-      <input id="{{section.id}}-form-input-name" required name="name" type="text" placeholder="name">
-      <input id="{{section.id}}-form-input-phone" required name="phone" type="tel" placeholder="phone">
-      <textarea id="{{section.id}}-form-input-message" required placeholder="message" name="message"></textarea>
-    </div>
+  <div class="form-inputs">
+    <input id="{{section.id}}-destinationEmail" value="{{section.settings.emailDestination}}" class="hidden">
+    <input id="{{section.id}}-form-input-name" required name="name" type="text" placeholder="name">
+    <input id="{{section.id}}-form-input-phone" required name="phone" type="tel" placeholder="phone">
+    <textarea id="{{section.id}}-form-input-message" required placeholder="message" name="message"></textarea>
+  </div>
 
-    <button id="{{section.id}}" onclick="onSubmit({{section.id}})" type="submit" class="submit-button">
-      {{ section.settings.buttonText }}
-    </button>
-  </form>
+  <button id="{{section.id}}" onclick="onSubmit({{section.id}})" type="submit" class="submit-button">
+    {{ section.settings.buttonText }}
+  </button>
+</form>
 
 {% schema %}
 {
