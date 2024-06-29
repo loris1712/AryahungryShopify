@@ -72,11 +72,12 @@
 
 .quick-add-modal__content-info input{
     border: 2px solid #015a3c;
+  border-left: none;
+  border-right: none;
     height: 44px;
     width: 100%;
     outline: none;
     padding-inline: 1rem;
-    border-radius: 8px;
     box-shadow: none !important;
     caret-color: #015a3c;
     color: #015a3c; 
