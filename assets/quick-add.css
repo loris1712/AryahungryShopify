@@ -234,7 +234,7 @@
 }
 
 .quick-add-modal__content-info {
-  --modal-padding: 1.5rem;
+  --modal-padding: 1rem;
   padding-right: 4.4rem;
   display: flex;
   overflow-y: auto;
@@ -385,6 +385,9 @@ quick-add-modal .product-form__buttons {
   padding: 0.8rem;
   min-width: 100%;
   box-sizing: border-box;
+  color: white;
+    background: #015a3c;
+    border-radius: 8px;
 }
 
 quick-add-modal .product-media-container.constrain-height {
