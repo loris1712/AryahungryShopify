@@ -250,7 +250,7 @@
                   -%}
                   {% # theme-check-enable %}
                   <select class="size-select">
-                    {% for size in product.metafields.size %}
+                    {% for size in product.metafields %}
                       <option value="{{size}}">{{size}}</option>
                     {% endfor %}
                   </select>
