@@ -35,9 +35,7 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    
-{{ 'cf-font-style.css' | asset_url | stylesheet_tag }}
-{{ content_for_header }}
+    {{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -244,6 +242,12 @@
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
+        background-color: #ffffff; /* Imposta il colore di sfondo bianco */
+        background-image: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/background.svg?v=1719701953'); /* Percorso alla texture */
+        background-repeat: fixed; /* Ripeti la texture su tutto lo sfondo */
+        background-position: center center; /* Posizione della texture (centrata) */
+        background-attachment: fixed; /* Fissa la texture in modo che si muova con lo scroll */
+
       }
 
        body {
