@@ -3,7 +3,6 @@
   height: 100%;
   position: relative;
   text-decoration: none;
-  min-width: fit-content;
 }
 
 .card {
@@ -465,6 +464,7 @@
   width: 100%;
   text-align: center;
   font-weight: 400;
+  font-family: inherit !important;
 }
 
 .card-information > * {
