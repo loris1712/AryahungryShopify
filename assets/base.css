@@ -364,10 +364,6 @@ blockquote {
   padding-left: 1rem;
 }
 
-.next_page{
-  background: #015a3c;
-}
-
 @media screen and (min-width: 750px) {
   blockquote {
     padding-left: 1.5rem;
