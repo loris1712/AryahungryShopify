@@ -259,7 +259,6 @@ h5,
 .h3,
 .h4,
 .h5 {
-
   src: url('{{ 'Integral CF' | asset_url }}') format('woff2'),
          url('{{ 'IntegralCF-Heavy.woff' | asset_url }}') format('woff');
 }
