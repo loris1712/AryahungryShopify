@@ -92,7 +92,7 @@
           "type": "social",
           "settings": {
             "name": "TIKTOK",
-            "icon": "shopify:\/\/shop_images\/DESIGN_1.png",
+            "icon": "shopify:\/\/shop_images\/tiktok.svg",
             "url": "https:\/\/www.tiktok.com\/@aryahungry"
           }
         },
@@ -100,7 +100,7 @@
           "type": "social",
           "settings": {
             "name": "Instagram",
-            "icon": "shopify:\/\/shop_images\/Group_1_1.png",
+            "icon": "shopify:\/\/shop_images\/ig.svg",
             "url": "https:\/\/www.instagram.com\/aryahungry_\/"
           }
         },
@@ -108,7 +108,7 @@
           "type": "social",
           "settings": {
             "name": "Facebook",
-            "icon": "shopify:\/\/shop_images\/Vector_1.png",
+            "icon": "shopify:\/\/shop_images\/fb.svg",
             "url": "shopify:\/\/products\/dont-fuck-it-up"
           }
         },
@@ -116,7 +116,7 @@
           "type": "social",
           "settings": {
             "name": "Youtube",
-            "icon": "shopify:\/\/shop_images\/Negative.png",
+            "icon": "shopify:\/\/shop_images\/yt.svg",
             "url": "https:\/\/www.youtube.com\/channel\/UCt9Jt372NSLoqkMSZDlHpmQ"
           }
         }
