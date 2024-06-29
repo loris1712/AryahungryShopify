@@ -386,8 +386,9 @@ quick-add-modal .product-form__buttons {
   min-width: 100%;
   box-sizing: border-box;
   color: white;
-    background: #015a3c;
-    border-radius: 8px;
+  background: #015a3c;
+  border-radius: 8px;
+  text-transform: uppercase;
 }
 
 quick-add-modal .product-media-container.constrain-height {
