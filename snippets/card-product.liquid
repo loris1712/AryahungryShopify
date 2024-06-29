@@ -369,7 +369,6 @@
       -%}
         <div id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info">
           <!-- Selettore di colore -->
-          <label for="ColorSelector-{{ card_product.id }}">Color</label>
           <select name="color" id="ColorSelector-{{ card_product.id }}" class="product-form__input">
             {% for option in card_product.options_with_values %}
               {% if option.name == 'Color' %}
@@ -381,7 +380,6 @@
           </select>
 
           <!-- Selettore di variante -->
-          <label for="VariantSelector-{{ card_product.id }}">Variant</label>
           <select name="variant" id="VariantSelector-{{ card_product.id }}" class="product-form__input">
             {% for variant in card_product.variants %}
               <option value="{{ variant.id }}">{{ variant.title }}</option>
@@ -389,7 +387,6 @@
           </select>
 
           <!-- Selettore di quantità -->
-          <label for="Quantity-{{ card_product.id }}">Quantity</label>
           <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="product-form__input">
         </div>
         <input
