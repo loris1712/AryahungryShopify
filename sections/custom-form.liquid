@@ -20,6 +20,10 @@
     margin-top: 4rem;
   }
 
+  .form-inputs .hidden{
+    display: none;
+  }
+
   .form-inputs input {
     border: 2px solid #015a3c;
     height: 44px;
@@ -80,9 +84,10 @@
   </h2>
 
   <div class="form-inputs">
-    <input id="form-input-name" name="name" type="text" placeholder="name">
-    <input id="form-input-phone" name="phone" type="tel" placeholder="phone">
-    <textarea id="form-input-message" placeholder="message"></textarea>
+    <input id="destinationEmail" value="{{section.settings.emailDestination}}" class="hidden"/>
+    <input id="form-input-name" required name="name" type="text" placeholder="name">
+    <input id="form-input-phone" required name="phone" type="tel" placeholder="phone">
+    <textarea id="form-input-message" required placeholder="message"></textarea>
   </div>
 
   <button id="{{section.id}}" onclick="onSubmit()" type="submit" class="submit-button">
