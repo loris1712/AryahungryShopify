@@ -127,12 +127,33 @@
       "settings": {
         "header": "FOLLOW ALONG FOR UPDATES"
       }
+    },
+    "17196734253fa80861": {
+      "type": "apps",
+      "blocks": {
+        "tiktok_feed_feed_hUHG8X": {
+          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/feed\/0809f857-6257-419d-a38a-2a39da17fbd1",
+          "settings": {
+            "tiktokfeed_heading": "Tiktok Feeds",
+            "feeds_heading_alignment": "left",
+            "feeds_padding": 0,
+            "feeds_margin": 0
+          }
+        }
+      },
+      "block_order": [
+        "tiktok_feed_feed_hUHG8X"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "hero_w4Lm7h",
     "rich_text_FExpBf",
     "featured_collection_GtRaDg",
-    "follow_gqR7aY"
+    "follow_gqR7aY",
+    "17196734253fa80861"
   ]
 }
