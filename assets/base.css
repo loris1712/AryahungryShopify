@@ -1863,12 +1863,10 @@ input[type='checkbox'] {
 .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
-  width: fit-content;
+  width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
   border-radius: var(--inputs-radius);
-  height: 48px;
-  min-height: 48px;
-  max-height: 48px;
+  min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
 }
 
 .quantity:after {
@@ -2914,6 +2912,15 @@ details-disclosure > details {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
   background-attachment: fixed;
+}
+
+.gradient2 {
+  background: rgb(var(--color-background));
+  background: var(--gradient-background);
+          background-image: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/background.svg?v=1719701953'); /* Percorso alla texture */
+        background-repeat: fixed; /* Ripeti la texture su tutto lo sfondo */
+        background-position: center center; /* Posizione della texture (centrata) */
+        background-attachment: fixed; /* Fissa la texture in modo che si muova con lo scroll */
 }
 
 @media screen and (forced-colors: active) {
