@@ -12,7 +12,7 @@
     "hero_w4Lm7h": {
       "type": "hero",
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/Rectangle_82_1.png",
+        "banner_image": "shopify:\/\/shop_images\/image.png",
         "banner_title": "Upcoming release",
         "date": "10 DAYS 23 HR 10 MIN 00 SEC"
       }
@@ -133,20 +133,6 @@
     },
     "17196760465c2535c0": {
       "type": "apps",
-      "blocks": {
-        "tiktok_feed_feed_8rDgFh": {
-          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/feed\/0809f857-6257-419d-a38a-2a39da17fbd1",
-          "settings": {
-            "tiktokfeed_heading": "Tiktok Feeds",
-            "feeds_heading_alignment": "center",
-            "feeds_padding": 26,
-            "feeds_margin": 21
-          }
-        }
-      },
-      "block_order": [
-        "tiktok_feed_feed_8rDgFh"
-      ],
       "settings": {
         "include_margins": true
       }
