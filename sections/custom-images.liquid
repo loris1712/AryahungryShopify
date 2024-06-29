@@ -42,13 +42,21 @@
 
 <style>
   .custom-images-wrapper {
-    position: relative;
   }
   .custom-image {
     position: absolute;
-    top: 0;
     transition: all 0.3s ease;
+    top: 10%;
+    left: 5%;
   }
+
+  .custom-image-2 {
+    position: absolute;
+    transition: all 0.3s ease;
+    top: 60%;
+    right: 5%;
+  }
+  
   .custom-image img {
     display: block;
     max-width: 100%;
@@ -60,7 +68,7 @@
   <div class="custom-image" style="top: {{ section.settings.image_1_offset }}px; left: {{ section.settings.image_1_offset }}px;">
     <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="First Image" width="200px" height="200px">
   </div>
-  <div class="custom-image" style="top: {{ section.settings.image_2_offset }}px; left: {{ section.settings.image_2_offset }}px;">
+  <div class="custom-image-2" style="top: {{ section.settings.image_2_offset }}px; left: {{ section.settings.image_2_offset }}px;">
     <img src="{{ section.settings.image_2 | img_url: 'master' }}" alt="Second Image" width="200px" height="200px">
   </div>
 </div>
