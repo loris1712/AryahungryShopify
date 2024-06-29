@@ -1,1 +1,88 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"custom_liquid_y69p4r":{"type":"custom-liquid","custom_css":[".custom-image-container {width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative;}",".custom-image-container img {width: 100%; height: auto; max-width: none;}"],"settings":{"custom_liquid":"{% comment %}\n   Assegna l'URL dell'immagine e la classe dell'immagine\n{% endcomment %}\n{% assign image_url = 'https:\/\/iili.io\/d3ifvg1.png' %}\n{% assign image_class = 'img-fluid' %}\n\n{% comment %}\n   Stampa l'immagine utilizzando l'URL e la classe assegnate\n{% endcomment %}\n<div class=\"custom-image-container\">\n  <img src=\"{{ image_url }}\" alt=\"Descrizione dell'immagine\" class=\"{{ image_class }}\">\n<\/div>","color_scheme":"","padding_top":0,"padding_bottom":0}},"custom_liquid_kecVXy":{"type":"custom-liquid","custom_css":[".custom-image-container {width: 100%; height: ; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative;}",".custom-image-container img {width: 100%; height: auto; max-width: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}"],"settings":{"custom_liquid":"{% comment %}\n   Assegna l'URL dell'immagine e la classe dell'immagine\n{% endcomment %}\n{% assign image_url = 'https:\/\/iili.io\/d3ifvg1.png' %}\n{% assign image_class = 'img-fluid' %}\n\n{% comment %}\n   Stampa l'immagine utilizzando l'URL e la classe assegnate\n{% endcomment %}\n<div class=\"custom-image-container\">\n  <img src=\"{{ image_url }}\" alt=\"Descrizione dell'immagine\" class=\"{{ image_class }}\">\n<\/div>","color_scheme":"","padding_top":0,"padding_bottom":0}},"newsletter":{"type":"newsletter","blocks":{"heading":{"type":"heading","settings":{"heading":"ARYAHUNGRY?","heading_size":"hxxl"}}},"block_order":["heading"],"settings":{"color_scheme":"scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2","full_width":true,"padding_top":28,"padding_bottom":0}},"footer":{"type":"footer","settings":{"color_scheme":"scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2","newsletter_enable":false,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":true,"margin_top":0,"padding_top":0,"padding_bottom":20}}},"order":["custom_liquid_y69p4r","custom_liquid_kecVXy","newsletter","footer"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "custom_liquid_y69p4r": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".custom-image-container {width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative;}",
+        ".custom-image-container img {width: 100%; height: auto; max-width: none;}"
+      ],
+      "settings": {
+        "custom_liquid": "{% comment %}\n   Assegna l'URL dell'immagine e la classe dell'immagine\n{% endcomment %}\n{% assign image_url = 'https:\/\/iili.io\/d3ifvg1.png' %}\n{% assign image_class = 'img-fluid' %}\n\n{% comment %}\n   Stampa l'immagine utilizzando l'URL e la classe assegnate\n{% endcomment %}\n<div class=\"custom-image-container\">\n  <img src=\"{{ image_url }}\" alt=\"Descrizione dell'immagine\" class=\"{{ image_class }}\">\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_kecVXy": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".custom-image-container {width: 100%; height: ; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative;}",
+        ".custom-image-container img {width: 100%; height: auto; max-width: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}"
+      ],
+      "settings": {
+        "custom_liquid": "{% comment %}\n   Assegna l'URL dell'immagine e la classe dell'immagine\n{% endcomment %}\n{% assign image_url = 'https:\/\/iili.io\/d3ifvg1.png' %}\n{% assign image_class = 'img-fluid' %}\n\n{% comment %}\n   Stampa l'immagine utilizzando l'URL e la classe assegnate\n{% endcomment %}\n<div class=\"custom-image-container\">\n  <img src=\"{{ image_url }}\" alt=\"Descrizione dell'immagine\" class=\"{{ image_class }}\">\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "ARYAHUNGRY?",
+            "heading_size": "hxxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "custom_css": [
+        "h2 {font-size: 8vw;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_y69p4r",
+    "custom_liquid_kecVXy",
+    "newsletter",
+    "footer"
+  ]
+}
