@@ -99,7 +99,7 @@
     caret-color: #015a3c;
     color: #015a3c;
     text-transform: capitalize;
-    background: transparent;
+    background: white;
 }
 
 .quantity-button-plus{
@@ -114,7 +114,7 @@
     caret-color: #015a3c;
     color: #015a3c;
     text-transform: capitalize;
-    background: transparent;
+    background: white;
 }
 
 @media screen and (min-width: 750px) {
