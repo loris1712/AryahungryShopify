@@ -51,7 +51,9 @@
         "button_KHqxYX"
       ],
       "custom_css": [
-        ".rich-text__wrapper {padding-top: 20rem; padding-bottom: 20rem;}"
+        ".rich-text__wrapper {padding-top: 20rem; padding-bottom: 20rem;}",
+        ".rich-text__text {margin-top: 0;}",
+        ".rich-text__buttons{margin-top: 0;}"
       ],
       "settings": {
         "desktop_content_position": "center",
