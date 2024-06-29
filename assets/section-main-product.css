@@ -116,7 +116,7 @@ product-info {
 }
 
 .shopify-payment-button__button--unbranded {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-color: #015A3C;
   color: rgb(var(--color-button-text));
   font-size: 1.4rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
