@@ -239,6 +239,8 @@
   display: flex;
   overflow-y: auto;
   padding-bottom: var(--modal-padding);
+  padding-right: 0;
+  padding-left: 0;
   height: 100%;
   gap: 1rem;
 }
