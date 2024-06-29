@@ -249,25 +249,6 @@
                     | item_count_for_variant: product.selected_or_first_available_variant.id
                   -%}
 
-                  {% assign product_metafields = product.metafields %}
-
-                  {% if product_metafields.size > 0 %}
-                    <div class="product-metafields">
-                      <h2>Product Metafields</h2>
-                      <ul>
-                        {% for namespace in product_metafields %}
-                          {% for key in namespace[1] %}
-                            <li>
-                              <strong>{{ namespace[0] }} - {{ key[0] }}:</strong> {{ key[1] }}
-                            </li>
-                          {% endfor %}
-                        {% endfor %}
-                      </ul>
-                    </div>
-                  {% else %}
-                    <p>No metafields found for this product.</p>
-                  {% endif %}
-
                   {% # theme-check-enable %}
                   <select class="size-select">
                     {% for size in product.metafields.size.value %}
