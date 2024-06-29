@@ -553,6 +553,7 @@ hr {
   text-transform: capitalize;
   text-align: center;
   font-size: 24px;
+  text-decoration: underline;
 }
 
 .placeholder {
