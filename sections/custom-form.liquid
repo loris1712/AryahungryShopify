@@ -36,7 +36,7 @@
         height: 104px;
         width: 100%;
         outline: none;
-        padding-inline: 1rem;
+        padding: 1rem;
         border-radius: 8px;
          box-shadow: none!important;
     }
@@ -77,9 +77,9 @@
     </h2>
 
     <div class="form-inputs">
-        <input name="name" type="text" placeholder="name"/>
-        <input name="phone" type="tel" placeholder="phone"/>
-        <textarea placeholder="message"></textarea>
+        <input id="form-input-name" name="name" type="text" placeholder="name"/>
+        <input id="form-input-phone" name="phone" type="tel" placeholder="phone"/>
+        <textarea id="form-input-message" placeholder="message"></textarea>
     </div>
 
     <button id="{{section.id}}" onclick="onSubmit()" type="submit" class="submit-button">{{section.settings.buttonText}}</button>
