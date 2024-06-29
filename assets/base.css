@@ -2903,10 +2903,6 @@ details-disclosure > details {
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
   background-color: rgb(var(--color-badge-background));
-          background-image: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/background.svg?v=1719701953'); /* Percorso alla texture */
-        background-repeat: fixed; /* Ripeti la texture su tutto lo sfondo */
-        background-position: center center; /* Posizione della texture (centrata) */
-        background-attachment: fixed; /* Fissa la texture in modo che si muova con lo scroll */
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
@@ -2916,6 +2912,11 @@ details-disclosure > details {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
   background-attachment: fixed;
+  
+          background-image: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/background.svg?v=1719701953'); /* Percorso alla texture */
+        background-repeat: fixed; /* Ripeti la texture su tutto lo sfondo */
+        background-position: center center; /* Posizione della texture (centrata) */
+        background-attachment: fixed; /* Fissa la texture in modo che si muova con lo scroll */
 }
 
 @media screen and (forced-colors: active) {
