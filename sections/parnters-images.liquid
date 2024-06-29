@@ -1,6 +1,65 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Partners Images",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "First Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Second Image"
+    },
+    {
+      "type": "range",
+      "id": "image_1_offset",
+      "label": "First Image Offset",
+      "default": 0,
+      "min": 0,
+      "max": 50,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "image_2_offset",
+      "label": "Second Image Offset",
+      "default": 0,
+      "min": 0,
+      "max": 50,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Partners Images",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
+
+<style>
+  .custom-images-wrapper {
+    position: relative;
+  }
+  .custom-image {
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  .custom-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+<div class="custom-images-wrapper">
+  <div class="custom-image" style="top: {{ section.settings.image_1_offset }}px; left: {{ section.settings.image_1_offset }}px;">
+    <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="First Image" width="200px" height="200px">
+  </div>
+  <div class="custom-image" style="top: {{ section.settings.image_2_offset }}px; left: {{ section.settings.image_2_offset }}px;">
+    <img src="{{ section.settings.image_2 | img_url: 'master' }}" alt="Second Image" width="200px" height="200px">
+  </div>
+</div>
