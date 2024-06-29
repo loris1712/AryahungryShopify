@@ -238,7 +238,7 @@
                 </div>
               {%- when 'quantity_selector' -%}
                 <div
-                style="display: flex; flex-direction: column; gap: 8px; flex:1;"
+                  style="display: flex; flex-direction: column; gap: 8px; flex:1;"
                   id="Quantity-Form-{{ section.id }}"
                   class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                   {{ block.shopify_attributes }}
@@ -248,10 +248,30 @@
                   {%- assign cart_qty = cart
                     | item_count_for_variant: product.selected_or_first_available_variant.id
                   -%}
+
+                  {% assign product_metafields = product.metafields %}
+
+                  {% if product_metafields.size > 0 %}
+                    <div class="product-metafields">
+                      <h2>Product Metafields</h2>
+                      <ul>
+                        {% for namespace in product_metafields %}
+                          {% for key in namespace[1] %}
+                            <li>
+                              <strong>{{ namespace[0] }} - {{ key[0] }}:</strong> {{ key[1] }}
+                            </li>
+                          {% endfor %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% else %}
+                    <p>No metafields found for this product.</p>
+                  {% endif %}
+
                   {% # theme-check-enable %}
                   <select class="size-select">
                     {% for size in product.metafields.size.value %}
-                      <option value="{{size}}">{{size}}</option>
+                      <option value="{{size}}">{{ size }}</option>
                     {% endfor %}
                   </select>
                   <div class="price-per-item__container">
