@@ -2914,13 +2914,17 @@ details-disclosure > details {
   background-attachment: fixed;
 }*/
 
-.gradient2 {
+.gradient {
+  background-color: transparent;
+}
+
+.gradient3 {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
   background-attachment: fixed;
 }
 
-.gradient3 {
+.gradient2 {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
           background-image: url('https://cdn.shopify.com/s/files/1/0884/5131/8076/files/background.svg?v=1719701953'); /* Percorso alla texture */
