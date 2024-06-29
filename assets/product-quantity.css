@@ -1,6 +1,7 @@
 .product-quantity-wrapper{
     display: flex;
     flex-direction: row;
+    gap: 8px;
 }
 
 .size-select{
@@ -9,4 +10,21 @@
     height: 48px;
     flex: 1;
     text-transform: uppercase;
+    padding-inline: 4px;
+    color: #015A3C;
+}
+
+.quantity-wrapper {
+    border: 3px solid #015A3C;
+    border-radius: 9px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quantity-wrapper button {
+    background: none;
+    border: none;
+    outline: none;
 }
