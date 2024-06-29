@@ -26,6 +26,15 @@
     gap: 4px;
 }
 
+.quantity-wrapper input{
+    border: none;
+    background-color: none;
+    color: #015A3C;
+    caret-color: #015A3C;
+    width: fit-content;
+    outline: none;
+}
+
 .quantity-wrapper button {
     background: none;
     border: none;
