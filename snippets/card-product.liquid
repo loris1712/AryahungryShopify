@@ -387,7 +387,13 @@
           </select>
 
           <!-- Selettore di quantità -->
-          <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="product-form__input">
+          <div class="quantity-selector">
+            <div class="quantity-input">
+              <button type="button" class="quantity-button quantity-button-minus">-</button>
+              <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="product-form__input">
+              <button type="button" class="quantity-button quantity-button-plus">+</button>
+            </div>
+          </div>
         </div>
         <input
           type="hidden"
