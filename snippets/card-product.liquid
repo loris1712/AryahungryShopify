@@ -389,10 +389,15 @@
                     {% endif %}
                   >
                   <div class="product-quantity-wrapper">
-                    <select class="size-select">
+                    <select class="size-select" class="size-select">
                       <option>Small</option>
                       <option>Medium</option>
                       <option>Large</option>
+                    </select>
+                    <select class="size-select">
+                      <option>White</option>
+                      <option>Black</option>
+                      <option>Red</option>
                     </select>
                     <quantity-input class="quantity" data-url="{{ card_product.url }}" data-section="{{ section.id }}">
                       <button class="quantity__button" name="minus" type="button">
