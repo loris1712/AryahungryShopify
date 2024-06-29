@@ -87,8 +87,8 @@
         "collapsible_tab_bRCTGr"
       ],
       "custom_css": [
-        "h1 {color: #015a3c; text-transform: uppercase;}",
-        "p {line-height: 17px;}"
+        "h1 {color: #015a3c; text-transform: uppercase; line-height: 45px;}",
+        "p {line-height: 17px; text-transform: capitalize;}"
       ],
       "settings": {
         "enable_sticky_info": true,
