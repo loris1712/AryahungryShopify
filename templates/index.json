@@ -39,7 +39,7 @@
         "text_JMbyRX"
       ],
       "custom_css": [
-        ".rich-text__text p{line-height: 22px;}"
+        ".rich-text__text p {line-height: 22px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -131,10 +131,21 @@
         "header": "FOLLOW ALONG FOR UPDATES"
       }
     },
-    "17196734253fa80861": {
+    "17196760465c2535c0": {
       "type": "apps",
-      "custom_css": [
-
+      "blocks": {
+        "tiktok_feed_feed_8rDgFh": {
+          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/feed\/0809f857-6257-419d-a38a-2a39da17fbd1",
+          "settings": {
+            "tiktokfeed_heading": "Tiktok Feeds",
+            "feeds_heading_alignment": "center",
+            "feeds_padding": 26,
+            "feeds_margin": 21
+          }
+        }
+      },
+      "block_order": [
+        "tiktok_feed_feed_8rDgFh"
       ],
       "settings": {
         "include_margins": true
@@ -146,6 +157,6 @@
     "rich_text_FExpBf",
     "featured_collection_GtRaDg",
     "follow_gqR7aY",
-    "17196734253fa80861"
+    "17196760465c2535c0"
   ]
 }
