@@ -72,8 +72,8 @@
 
 .quick-add-modal__content-info input{
     border: 2px solid #015a3c;
-  border-left: none;
-  border-right: none;
+    border-left: none;
+    border-right: none;
     height: 44px;
     width: 100%;
     outline: none;
@@ -81,6 +81,7 @@
     box-shadow: none !important;
     caret-color: #015a3c;
     color: #015a3c; 
+    font-size: 18px;
     text-transform: capitalize;
 }
 
