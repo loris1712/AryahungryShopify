@@ -12,7 +12,7 @@
     "hero_w4Lm7h": {
       "type": "hero",
       "custom_css": [
-        ".banner-img {border-radius: 12px;}"
+        ".banner-img {border-radius: 24px; width: 100%;}"
       ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/image.png",
