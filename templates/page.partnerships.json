@@ -55,17 +55,13 @@
         "content_alignment": "center",
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
         "full_width": true,
-        "padding_top": 48,
-        "padding_bottom": 52
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "custom_images": {
       "type": "custom-images",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/imagepartner.png",
-        "image_2": "shopify:\/\/shop_images\/imagepartner2.png",
-        "image_1_offset": 0,
-        "image_2_offset": 0
       }
     }
   },
