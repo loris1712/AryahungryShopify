@@ -381,6 +381,25 @@
             disabled
           {% endif %}
         >
+        <div class="product-quantity-wrapper">
+          <select class="size-select">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+          <div class="quantity-wrapper">
+            <button>-</button>
+            <input
+              type="number"
+              id="Quantity-{{ card_product.id }}"
+              name="quantity"
+              value="1"
+              min="1"
+              class="product-form__input"
+            >
+            <button>+</button>
+          </div>
+        </div>
         <button
           id="{{ product_form_id }}-submit"
           type="submit"
