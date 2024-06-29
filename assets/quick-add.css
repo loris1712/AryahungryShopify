@@ -240,6 +240,7 @@
   overflow-y: auto;
   padding: var(--modal-padding);
   height: 100%;
+  gap: 1rem;
 }
 
 .quick-add-modal__content-info > * {
