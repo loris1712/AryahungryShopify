@@ -11,6 +11,15 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_liquid_tXV7P3": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% comment %}\n Just using this to create space\n{% endcomment %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "custom_liquid_y69p4r": {
       "type": "custom-liquid",
       "custom_css": [
@@ -80,6 +89,7 @@
     }
   },
   "order": [
+    "custom_liquid_tXV7P3",
     "custom_liquid_y69p4r",
     "custom_liquid_kecVXy",
     "newsletter",
