@@ -601,10 +601,8 @@ hr {
   font-family: var(--font-heading-family);}
 }
 
-@media screen and (min-width: 750px) {
-  .product-card-title{
-    width: 18vw;
-  }
+.full-unstyled-link .product-card-title{
+  width: 18vw;
 }
 
 .placeholder {
