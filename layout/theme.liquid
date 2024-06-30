@@ -33,32 +33,55 @@
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
 
     <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.body.addEventListener('click', function(event) {
-      // Decrement quantity
-      if (event.target.classList.contains('quantity-button-minus-card')) {
-        var input = event.target.nextElementSibling;
-        var currentValue = parseInt(input.value);
-        if (currentValue > 1) {
-          input.value = currentValue - 1;
-        }
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.addEventListener('click', function(event) {
+    // Decrement quantity
+    if (event.target.classList.contains('quantity-button-minus-card')) {
+      var input = event.target.nextElementSibling;
+      var currentValue = parseInt(input.value);
+      if (currentValue > 1) {
+        input.value = currentValue - 1;
       }
+    }
 
-      // Increment quantity
-      if (event.target.classList.contains('quantity-button-plus-card')) {
-        var input = event.target.previousElementSibling;
-        var currentValue = parseInt(input.value);
-        input.value = currentValue + 1;
+    // Increment quantity
+    if (event.target.classList.contains('quantity-button-plus-card')) {
+      var input = event.target.previousElementSibling;
+      var currentValue = parseInt(input.value);
+      input.value = currentValue + 1;
+    }
+  });
+
+  // Update variant ID in the hidden input when an option is selected
+  window.updateVariantId = function(productId) {
+    var sizeSelect = document.getElementById('SizeSelector-' + productId);
+    var colorSelect = document.getElementById('ColorSelector-' + productId);
+    var hiddenVariantId = document.getElementById('hidden-variant-id-' + productId);
+
+    var selectedSize = sizeSelect.value;
+    var selectedColor = colorSelect.value;
+
+    var variantId;
+
+    // Loop through variants to find the matching one
+    card_products.forEach(function(product) {
+      if (product.id == productId) {
+        product.variants.forEach(function(variant) {
+          if (variant.option1 == selectedSize && variant.option2 == selectedColor) {
+            variantId = variant.id;
+          }
+        });
       }
-      
     });
 
-    function updateVariantId(select) {
-    var form = select.closest('form');
-    var variantIdInput = form.querySelector('input[name="id"]');
-    variantIdInput.value = select.value;
-  }
-  });
+    if (variantId) {
+      hiddenVariantId.value = variantId;
+    } else {
+      console.log('No matching variant found');
+    }
+  };
+});
+
 </script>
 
     
