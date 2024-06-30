@@ -39,27 +39,27 @@
   {%- endif -%}
 
   {%- if color_option -%}
-    <fieldset class="product-form__input product-form__input--swatch">
-      <legend class="form__label">{{ color_option.name }}</legend>
-      {% render 'product-variant-options',
-        product: product,
-        option: color_option,
-        block: block,
-        picker_type: 'swatch'
-      %}
-    </fieldset>
+
+    <div class="product-form__input product-form__input--dropdown">
+      <label class="form__label" for="Option-{{ section.id }}-size">
+        {{ color_option.name }}
+      </label>
+      <div class="select">
+        <select
+          id="Option-{{ section.id }}-size"
+          class="select__select"
+          name="options[{{ color_option.name | escape }}]"
+          form="{{ product_form_id }}"
+        >
+          {% for value in color_option.values %}
+            <option value="{{ value }}">{{ value }}</option>
+          {% endfor %}
+        </select>
+        {% render 'icon-caret' %}
+      </div>
+    </div>
   {%- endif -%}
 
-  <div class="product-form__input product-form__input--quantity">
-    <label class="form__label" for="Quantity-{{ section.id }}">
-      Quantity
-    </label>
-    <div class="quantity-selector">
-      <button type="button" class="quantity-selector__button" data-action="decrease">-</button>
-      <input type="number" id="Quantity-{{ section.id }}" name="quantity" value="1" min="1" class="quantity-selector__input">
-      <button type="button" class="quantity-selector__button" data-action="increase">+</button>
-    </div>
-  </div>
 
   <script type="application/json" data-selected-variant>{{ product.selected_or_first_available_variant | json }}</script>
 </variant-selects>
