@@ -66,6 +66,7 @@
   var variantId = selectedVariant.value;
 
   // Aggiorna l'input nascosto con l'ID della variante selezionata
+    product.selected_or_first_available_variant =variantId;
   document.querySelector('input[name="id"]').value = variantId;
 }
 </script>
