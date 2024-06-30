@@ -6,13 +6,13 @@
   assign release_date = section.settings.date
 %}
 
-<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
-
 <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      var releaseDate = new Date('{{ release_date }}').getTime();
-      var currentDate = moment.now().format('MM/DD/YYYY hh:mm:ss')
-      console.log({ releaseDate, currentDate });
+        console.log({{section.settings.date}})
+        document.addEventListener('DOMContentLoaded', function() {
+        console.log({{section.settings.date}})
+        var releaseDate = new Date('{{ release_date }}').getTime();
+        var currentDate = moment.now().format('MM/DD/YYYY hh:mm:ss')
+        console.log({ releaseDate, currentDate });
   })
 </script>
 
