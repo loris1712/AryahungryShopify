@@ -49,6 +49,17 @@
         "padding_bottom": 52
       }
     },
+    "contact_form_9kqGMi": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "FOR BUSINESS",
+        "buttonText": "SUBMIT",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_liquid_MnMyhf": {
       "type": "custom-liquid",
       "settings": {
@@ -64,6 +75,7 @@
     "custom_liquid_UNCYr3",
     "contact_form_fPDGRU",
     "custom_liquid_7zhUHK",
+    "contact_form_9kqGMi",
     "custom_liquid_MnMyhf"
   ]
 }
