@@ -35,7 +35,8 @@
     </div>
   {%- endif -%}
 
-  {%- if color_option -%}
+  <div>
+      {%- if color_option -%}
 
     <div class="product-form__input product-form__input--dropdown">
       <div class="select">
@@ -84,6 +85,8 @@
                           {% render 'icon-plus' %}
                         </button>
                       </quantity-input>
+  </div>
+
 
 
   <script type="application/json" data-selected-variant>{{ product.selected_or_first_available_variant | json }}</script>
