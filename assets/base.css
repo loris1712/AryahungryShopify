@@ -1837,7 +1837,6 @@ details[open] > .share-button__fallback {
 
 .field__input::placeholder,
 .customer .field input::placeholder {
-  opacity: 0;
 }
 
 .field__button {

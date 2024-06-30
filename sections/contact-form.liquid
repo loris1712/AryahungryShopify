@@ -10,7 +10,7 @@
     box-shadow: none;
   }
 
-  .field__input {
+  .form__input {
     border: 3px solid #015a3c;
     height: 44px;
     width: 100%;
@@ -82,7 +82,7 @@
         </ul>
       {%- endif -%}
       <input
-            class="field__input"
+            class="form__input"
             autocomplete="name"
             type="text"
             id="ContactForm-name"
@@ -95,7 +95,7 @@
             autocomplete="email"
             type="email"
             id="ContactForm-email"
-            class="field__input"
+            class="form__input"
             name="contact[email]"
             spellcheck="false"
             autocapitalize="off"
@@ -122,14 +122,14 @@
         <textarea
           rows="10"
           id="ContactForm-body"
-          class="text-area field__input"
+          class="text-area form__input"
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
           placeholder="MESSAGE"
         >
           {{- form.body -}}
         </textarea>
       </div>
-      <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem; width: 228px;">
+      <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem; width: 228px; margin-top: 3rem; background-color: #015A3C;">
           {{ section.settings.buttonText }}
         </button>
     {%- endform -%}
