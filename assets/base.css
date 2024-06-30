@@ -601,7 +601,7 @@ hr {
   font-family: var(--font-heading-family);}
 }
 
-.full-unstyled-link .product-card-title{
+.card-heading .full-unstyled-link {
   width: 18vw;
 }
 
