@@ -17,7 +17,8 @@
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
-      <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <h2
+       class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.heading }}
       </h2>
     {%- else -%}
@@ -110,8 +111,8 @@
         </label>
       </div>
       <div class="contact__button">
-        <button type="submit" class="button">
-          {{ 'templates.contact.form.send' | t }}
+        <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem;">
+          {{ section.settings.buttonText }}
         </button>
       </div>
     {%- endform -%}
@@ -132,6 +133,12 @@
       "id": "heading",
       "default": "t:sections.contact-form.settings.title.default",
       "label": "t:sections.contact-form.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "buttonText",
+      "default": "SUBMIT",
+      "label": "Button Text"
     },
     {
       "type": "select",
