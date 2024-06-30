@@ -19,6 +19,22 @@ product-info {
   padding-left: 0;
 }
 
+@media screen and (max-width: 750px) {
+  
+  .product__description p{
+        font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 750px) {
+  
+  .product__description p{
+        font-size: 14px;
+  }
+
+}
+
 @media screen and (min-width: 750px) {
   .product__column-sticky {
     display: block;
