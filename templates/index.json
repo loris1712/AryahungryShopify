@@ -70,7 +70,7 @@
         "description_style": "body",
         "collection": "frontpage",
         "products_to_show": 15,
-        "columns_desktop": 2,
+        "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
