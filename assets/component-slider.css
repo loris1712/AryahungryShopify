@@ -1,4 +1,7 @@
 slider-component {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap!important;
   --desktop-margin-left-first-item: max(
     5rem,
     calc((100vw - var(--page-width) + 10rem - var(--grid-desktop-horizontal-spacing)) / 2)
