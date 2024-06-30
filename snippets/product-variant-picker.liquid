@@ -59,7 +59,16 @@
                       </quantity-input>
   </div>
 
+<script>
+  function updateVariantId(selectElement) {
+  var selectedVariantIndex = selectElement.selectedIndex;
+  var selectedVariant = selectElement.options[selectedVariantIndex];
+  var variantId = selectedVariant.value;
 
+  // Aggiorna l'input nascosto con l'ID della variante selezionata
+  document.querySelector('input[name="id"]').value = variantId;
+}
+</script>
 
   <script type="application/json" data-selected-variant>{{ product.selected_or_first_available_variant | json }}</script>
 </variant-selects>
