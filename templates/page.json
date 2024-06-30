@@ -36,7 +36,7 @@
         "button_LDj4iX": {
           "type": "button",
           "settings": {
-            "button_label": "Back",
+            "button_label": "Go Back",
             "button_link": "shopify:\/\/pages\/contact",
             "button_style_secondary": false,
             "button_label_2": "",
