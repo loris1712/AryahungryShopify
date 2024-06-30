@@ -692,3 +692,28 @@
     </div>
   </div>
 {%- endif -%}
+
+            <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Decrement quantity
+    document.querySelectorAll('.quantity-button-minus').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var input = button.nextElementSibling;
+        var currentValue = parseInt(input.value);
+        if (currentValue > 1) {
+          input.value = currentValue - 1;
+        }
+      });
+    });
+
+    // Increment quantity
+    document.querySelectorAll('.quantity-button-plus').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var input = button.previousElementSibling;
+        var currentValue = parseInt(input.value);
+        input.value = currentValue + 1;
+      });
+    });
+  });
+</script>
+
