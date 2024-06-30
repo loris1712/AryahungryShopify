@@ -29,12 +29,14 @@
         "padding_bottom": 52
       }
     },
-    "custom_form_Qgh7fE": {
-      "type": "custom-form",
+    "contact_form_R3MrGk": {
+      "type": "contact-form",
       "settings": {
-        "emailDestination": "merch@aryahungry.ca",
-        "headerText": "FOR MERCHANDISE",
-        "buttonText": "SUBMIT"
+        "heading": "FOR MERCHANCHISE",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_liquid_7zhUHK": {
@@ -44,14 +46,6 @@
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "custom_form_TFpQy9": {
-      "type": "custom-form",
-      "settings": {
-        "emailDestination": "management@aryahungry.ca",
-        "headerText": "FOR BUSINESS",
-        "buttonText": "SUBMIT"
       }
     },
     "custom_liquid_MnMyhf": {
@@ -67,9 +61,8 @@
   "order": [
     "main",
     "custom_liquid_UNCYr3",
-    "custom_form_Qgh7fE",
+    "contact_form_R3MrGk",
     "custom_liquid_7zhUHK",
-    "custom_form_TFpQy9",
     "custom_liquid_MnMyhf"
   ]
 }
