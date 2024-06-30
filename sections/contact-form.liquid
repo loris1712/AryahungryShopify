@@ -26,13 +26,18 @@
    .form-field__input input::placeholder {
     color: #015a3c !important;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: uppercase!important;
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+    @media screen and (max-width: 750px) {
+    .title{
+      font-size: 18px;
     }
   }
 {%- endstyle -%}
@@ -86,7 +91,6 @@
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             placeholder="NAME"
           >
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         </div>
       <div class="field field--with-error">
           <input
@@ -103,12 +107,9 @@
               aria-invalid="true"
               aria-describedby="ContactForm-email-error"
             {% endif %}
-            placeholder="{{ 'templates.contact.form.email' | t }}"
+            placeholder="EMAIL"
           >
-          <label class="field__label" for="ContactForm-email">
-            {{- 'templates.contact.form.email' | t }}
-            <span aria-hidden="true">*</span></label
-          >
+          <span aria-hidden="true">*</span>
           {%- if form.errors contains 'email' -%}
             <small class="contact__field-error" id="ContactForm-email-error">
               <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
@@ -130,9 +131,6 @@
         >
           {{- form.body -}}
         </textarea>
-        <label class="form__label field__label" for="ContactForm-body">
-          {{- 'templates.contact.form.comment' | t -}}
-        </label>
       </div>
       <div class="contact__button">
         <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem; width: 228px;">
