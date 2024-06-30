@@ -10,7 +10,6 @@
   Usage:
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
 {% endcomment %}
-<!-- buy-buttons.liquid -->
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
     {%- liquid
@@ -58,7 +57,7 @@
           value="{{ product.selected_or_first_available_variant.id }}"
           {% if product.selected_or_first_available_variant.available == false
             or quantity_rule_soldout
-            or product.selected_or_first_available_variant == null
+            or product.selected_or_first_available_variant == nil
           %}
             disabled
           {% endif %}
@@ -68,8 +67,6 @@
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
-
-        <input type="hidden" name="variant_id"> <!-- Assicurati che questo campo esista -->
 
         <div class="product-form__buttons">
           {%- liquid
@@ -81,6 +78,29 @@
               assign quantity_rule_soldout = true
             endif
           -%}
+          <button
+            id="ProductSubmitButton-{{ section_id }}"
+            type="submit"
+            name="add"
+            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            {% if product.selected_or_first_available_variant.available == false
+              or quantity_rule_soldout
+              or product.selected_or_first_available_variant == nil
+            %}
+              disabled
+            {% endif %}
+          >
+            <span>
+              {%- if product.selected_or_first_available_variant == nil -%}
+                {{ 'products.product.unavailable' | t }}
+              {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- else -%}
+                {{ 'products.product.add_to_cart' | t }}
+              {%- endif -%}
+            </span>
+            {%- render 'loading-spinner' -%}
+          </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
