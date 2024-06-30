@@ -607,12 +607,6 @@ hr {
   }
 }
 
-@media screen and (max-width: 750px) {
-  .prodouct-card-title{
-    width: 14vw;
-  }
-}
-
 .placeholder {
   background-color: rgba(var(--color-foreground), 0.04);
   color: rgba(var(--color-foreground), 0.55);
