@@ -58,6 +58,9 @@
     </quantity-input>
   </div>
 
+  <!-- Campo nascosto per l'ID della variante selezionata -->
+  <input type="hidden" name="variant_id" value="{{ product.selected_or_first_available_variant.id }}">
+
   <script>
     function updateVariantId(selectElement) {
       var selectedVariantIndex = selectElement.selectedIndex;
