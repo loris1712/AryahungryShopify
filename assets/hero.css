@@ -7,6 +7,10 @@
     align-items: center;
     max-width: var(--page-width);
   }
+  
+  #herodateinput{
+    display: none;
+  }
 
   .banner-img {
     z-index: 1;

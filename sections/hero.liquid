@@ -6,17 +6,10 @@
   assign release_date = section.settings.date
 %}
 
-<script>
-        console.log({{section.settings.date}})
-        document.addEventListener('DOMContentLoaded', function() {
-        console.log({{section.settings.date}})
-        var releaseDate = new Date('{{ release_date }}').getTime();
-        var currentDate = moment.now().format('MM/DD/YYYY hh:mm:ss')
-        console.log({ releaseDate, currentDate });
-  })
-</script>
+<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
 
 <div class="banner-wrapper page-width">
+    <input id="herodateinput" value="{{release_date}}"/>
   <img
     class="banner-img"
     srcset="{{ section.settings.banner_image | image_url: width:760 }}, {{ section.settings.banner_image | image_url: width: 760 }} 2x"
@@ -51,10 +44,10 @@
       "default": "UPCOMING RELEASE"
     },
     {
-      "type": "number",
+      "type": "text",
       "id": "date",
-      "label": "Release date - Timestamp",
-      "info": "Format: 1719734632"
+      "label": "Release date",
+      "info": "Format: MM/DD/YYYY hh:mm:ss"
     }
   ],
   "presets": [{ "name": "Hero Banner" }]
