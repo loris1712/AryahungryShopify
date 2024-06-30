@@ -219,7 +219,7 @@
                     <summary>
                       <div class="summary__title">
                         {% render 'icon-accordion', icon: block.settings.icon %}
-                        <h2 class="h4 accordion__title inline-richtext">
+                        <h2 class="h4 accordion__title inline-richtext" style="font-size: 20px;">
                           {{ block.settings.heading | default: block.settings.page.title | escape }}
                         </h2>
                       </div>
@@ -528,7 +528,7 @@
                         <div class="summary__title">
                           {%- if block.settings.make_collapsible_row -%}
                             {% render 'icon-accordion', icon: block.settings.icon %}
-                            <h2 class="h4 accordion__title" style="font-size: 20px;">{{ block.settings.block_heading }}</h2>
+                            <h2 class="h4 accordion__title">{{ block.settings.block_heading }}</h2>
                           {%- else -%}
                             <h2 class="h3 accordion__title">{{ block.settings.block_heading }}</h2>
                           {%- endif -%}
