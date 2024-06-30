@@ -109,7 +109,6 @@
             {% endif %}
             placeholder="EMAIL"
           >
-          <span aria-hidden="true">*</span>
           {%- if form.errors contains 'email' -%}
             <small class="contact__field-error" id="ContactForm-email-error">
               <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
