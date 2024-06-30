@@ -601,7 +601,7 @@ hr {
   font-family: var(--font-heading-family);}
 }
 
-.card-heading .full-unstyled-link {
+.full-unstyled-link {
   width: 18vw;
 }
 
