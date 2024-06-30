@@ -601,10 +601,6 @@ hr {
   font-family: var(--font-heading-family);}
 }
 
-.full-unstyled-link {
-  width: 18vw !important;
-}
-
 .placeholder {
   background-color: rgba(var(--color-foreground), 0.04);
   color: rgba(var(--color-foreground), 0.55);
