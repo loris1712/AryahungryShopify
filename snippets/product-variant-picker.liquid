@@ -18,6 +18,9 @@
   {%- assign size_option = product.options_with_values | where: "name", "Size" | first -%}
   {%- assign color_option = product.options_with_values | where: "name", "Color" | first -%}
 
+  <form action="/cart/add" method="post" id="add-to-cart-form-{{ product.id }}" class="product-form" enctype="multipart/form-data">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
   <select name="id" id="VariantSelector-{{ product.id }}" class="card_select" style="flex: 1; width: 100%; margin-bottom: 1rem; border: 3px solid #015a3c !important;" onchange="updateVariantId(this)">
     {% for variant in product.variants %}
       <option value="{{ variant.id }}">{{ variant.title }}</option>
@@ -58,6 +61,8 @@
                         </button>
                       </quantity-input>
   </div>
+
+  </form>
 
 <script>
   function updateVariantId(selectElement) {
