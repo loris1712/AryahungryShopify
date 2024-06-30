@@ -315,34 +315,40 @@
         {%- render 'loading-spinner' -%}
       </button>
     </modal-opener>-->
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}">
-      <select name="color" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
-            {% for option in card_product.options_with_values %}
-              {% if option.name == 'Color' %}
-                {% for value in option.values %}
-                  <option value="{{ value }}">{{ value }}</option>
-                {% endfor %}
-              {% endif %}
+    <form action="/cart/add" method="post" id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+      <input type="hidden" name="form_type" value="product">
+      <input type="hidden" name="utf8" value="✓">
+      <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
+
+      <select name="option1" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
+        {% for option in card_product.options_with_values %}
+          {% if option.name == 'Color' %}
+            {% for value in option.values %}
+              <option value="{{ value }}">{{ value }}</option>
             {% endfor %}
-          </select>
+          {% endif %}
+        {% endfor %}
+      </select>
 
-          <!-- Variants -->
-          <select name="variant" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
-            {% for variant in card_product.variants %}
-              <option value="{{ variant.id }}">{{ variant.title }}</option>
-            {% endfor %}
-          </select>
+      <!-- Variants -->
+      <select name="id" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
+        {% for variant in card_product.variants %}
+          <option value="{{ variant.id }}">{{ variant.title }}</option>
+        {% endfor %}
+      </select>
 
-          <!-- Quantity -->
-          <div class="quantity-selector" style="flex: 1;">
-            <div class="quantity-input">
-              <button type="button" class="quantity__button quantity-button-minus-card">-</button>
-              <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="quantity__input">
-              <button type="button" class="quantity__button quantity-button-plus-card">+</button>
+      <!-- Quantity -->
+      <div class="quantity-selector" style="flex: 1;">
+        <div class="quantity-input">
+          <button type="button" class="quantity__button quantity-button-minus-card">-</button>
+          <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="quantity__input">
+          <button type="button" class="quantity__button quantity-button-plus-card">+</button>
+        </div>
+      </div>
 
-            </div>
-          </div>
-    </div>
+      <!-- Add to Cart Button -->
+      <button type="submit" class="btn btn--full add-to-cart-button" style="flex: 1;">Add to Cart</button>
+    </form>
     <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
       <div
         role="dialog"
