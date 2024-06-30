@@ -52,7 +52,7 @@
       ],
       "custom_css": [
         ".rich-text__wrapper {padding-top: 20rem; padding-bottom: 20rem;}",
-        "@media (max-width: 767px) {.rich-text__wrapper {padding-top: 35rem; padding-bottom: 35rem; }}",
+        "@media (max-width: 767px) {.rich-text__wrapper {padding-top: 35rem; padding-bottom: 15rem; }}",
         ".rich-text__text {margin-top: 0;}",
         ".rich-text__text P {font-family: space grotesk !important;}",
         ".rich-text__buttons {margin-top: 0;}"
