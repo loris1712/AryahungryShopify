@@ -57,9 +57,9 @@
     "featured_collection_GtRaDg": {
       "type": "featured-collection",
       "custom_css": [
-        ".grid{gap:1rem!important;}",
+        ".grid {gap: 1rem !important;}",
         ".card__heading--placeholder {color: #015a3c;}",
-        ".card-wrapper {max-width: 390px !important; width: 100%; min-width: fit-c;}",
+        ".card-wrapper {width: 100%; min-width: fit-c;}",
         "slider-component {transform: rotate(-2deg) !important; margin: 8rem auto; display: block; align-items: center; align-self: center;}"
       ],
       "settings": {
@@ -69,9 +69,9 @@
         "show_description": false,
         "description_style": "body",
         "collection": "frontpage",
-        "products_to_show": 4,
-        "columns_desktop": 3,
-        "full_width": true,
+        "products_to_show": 15,
+        "columns_desktop": 2,
+        "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
