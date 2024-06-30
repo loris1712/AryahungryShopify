@@ -160,7 +160,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .quantity-input input {
-  width: 2vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 990px) {
@@ -922,7 +923,6 @@ summary::-webkit-details-marker {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  width: var(--page-width)
   margin-bottom: 2rem;
   padding: 0;
   list-style: none;
@@ -942,13 +942,19 @@ summary::-webkit-details-marker {
 }
 
 .grid__item {
-  width: 100%;
-  max-width: 400px;
-  flex-grow: 0;
+  width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
+  max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
+  flex-grow: 1;
   flex-shrink: 0;
   min-width: fit-content;
 }
 
+@media screen and (min-width: 750px) {
+  .grid__item {
+    width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+    max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+}
 
 .grid--gapless.grid {
   column-gap: 0;
