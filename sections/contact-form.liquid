@@ -23,10 +23,11 @@
     margin-bottom: 4px;
   }
 
-   .form-field__input input::placeholder {
+   .form__input input::placeholder {
     color: #015a3c !important;
     font-weight: 500;
     text-transform: uppercase!important;
+    opacity:1;
   }
 
   @media screen and (min-width: 750px) {
@@ -47,7 +48,8 @@
     {%- if section.settings.heading != blank -%}
       <h2
         style="text-align: center; color: #015A3C;"
-       class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      >
         {{ section.settings.heading }}
       </h2>
     {%- else -%}
@@ -82,43 +84,43 @@
         </ul>
       {%- endif -%}
       <input
-            class="form__input"
-            autocomplete="name"
-            type="text"
-            id="ContactForm-name"
-            name="contact[{{ 'templates.contact.form.name' | t }}]"
-            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-            placeholder="NAME"
-          />
-      <div class=" field--with-error">
-          <input
-            autocomplete="email"
-            type="email"
-            id="ContactForm-email"
-            class="form__input"
-            name="contact[email]"
-            spellcheck="false"
-            autocapitalize="off"
-            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-            aria-required="true"
-            {% if form.errors contains 'email' %}
-              aria-invalid="true"
-              aria-describedby="ContactForm-email-error"
-            {% endif %}
-            placeholder="EMAIL"
-          />
-          {%- if form.errors contains 'email' -%}
-            <small class="contact__field-error" id="ContactForm-email-error">
-              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-              <span class="form__message">
-                {%- render 'icon-error' -%}
-                {{- form.errors.translated_fields.email | capitalize }}
-                {{ form.errors.messages.email -}}
-              </span>
-            </small>
-          {%- endif -%}
-        </div>
-      <div >
+        class="form__input"
+        autocomplete="name"
+        type="text"
+        id="ContactForm-name"
+        name="contact[{{ 'templates.contact.form.name' | t }}]"
+        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        placeholder="NAME"
+      >
+      <div class="field--with-error">
+        <input
+          autocomplete="email"
+          type="email"
+          id="ContactForm-email"
+          class="form__input"
+          name="contact[email]"
+          spellcheck="false"
+          autocapitalize="off"
+          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+          aria-required="true"
+          {% if form.errors contains 'email' %}
+            aria-invalid="true"
+            aria-describedby="ContactForm-email-error"
+          {% endif %}
+          placeholder="EMAIL"
+        >
+        {%- if form.errors contains 'email' -%}
+          <small class="contact__field-error" id="ContactForm-email-error">
+            <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+            <span class="form__message">
+              {%- render 'icon-error' -%}
+              {{- form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email -}}
+            </span>
+          </small>
+        {%- endif -%}
+      </div>
+      <div>
         <textarea
           rows="10"
           id="ContactForm-body"
@@ -129,9 +131,13 @@
           {{- form.body -}}
         </textarea>
       </div>
-      <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem; width: 228px; margin-top: 3rem; background-color: #015A3C;">
-          {{ section.settings.buttonText }}
-        </button>
+      <button
+        type="submit"
+        class="button"
+        style="padding-left: 2rem; padding-right: 2rem; width: 228px; margin-top: 3rem; background-color: #015A3C;"
+      >
+        {{ section.settings.buttonText }}
+      </button>
     {%- endform -%}
   </div>
 </div>
