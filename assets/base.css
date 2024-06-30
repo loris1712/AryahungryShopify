@@ -75,23 +75,14 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading-family);
-}
-
 /* base */
-body {
-  background-color: #f5f5f5 !important;
+body{
+  background-color: #F5F5F5!important;
 }
 
-.card {
+.card{
   background-color: #fff !important;
-  background: #fff !important;
+  background: #fff!important;
 }
 
 .page-width {
@@ -2901,7 +2892,7 @@ details[open] > .header__menu-item .icon-caret {
   color: #fff;
   text-underline-offset: 0.3rem;
   background-color: rgb(var(--color-foreground));
-  border-color: #015a3c !important;
+  border-color: #015A3C!important;
 }
 
 .header__menu-item:hover .header__active-menu-item {
@@ -3378,6 +3369,7 @@ details-disclosure > details {
   .scroll-trigger.animate--fade-in,
   .scroll-trigger.animate--slide-in {
     opacity: 0.01;
+      font-family: var(--font-heading-family);
   }
 
   .scroll-trigger.animate--slide-in {
