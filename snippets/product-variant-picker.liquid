@@ -25,50 +25,49 @@
   </select>
 
   <div style="display: flex; align-items: center;">
-
-  <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}" style="width: 100%; margin-bottom: 1rem; background: white;">
-                        <button class="quantity__button" name="minus" type="button">
-                          <span class="visually-hidden">
-                            {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
-                          </span>
-                          {% render 'icon-minus' %}
-                        </button>
-                        <input
-                          class="quantity__input"
-                          type="number"
-                          style="margin-left: auto; margin-right: auto;"
-                          name="quantity"
-                          id="Quantity-{{ section.id }}"
-                          data-cart-quantity="{{ cart_qty }}"
-                          data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                          min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                          {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
-                            data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                            max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                          {% endif %}
-                          step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-                          value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                          form="{{ product_form_id }}"
-                        >
-                        <button class="quantity__button" name="plus" type="button">
-                          <span class="visually-hidden">
-                            {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
-                          </span>
-                          {% render 'icon-plus' %}
-                        </button>
-                      </quantity-input>
+    <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}" style="width: 100%; margin-bottom: 1rem; background: white;">
+      <button class="quantity__button" name="minus" type="button">
+        <span class="visually-hidden">
+          {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+        </span>
+        {% render 'icon-minus' %}
+      </button>
+      <input
+        class="quantity__input"
+        type="number"
+        style="margin-left: auto; margin-right: auto;"
+        name="quantity"
+        id="Quantity-{{ section.id }}"
+        data-cart-quantity="{{ cart_qty }}"
+        data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+        min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+        {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
+          data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+          max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+        {% endif %}
+        step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+        value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+        form="{{ product_form_id }}"
+      >
+      <button class="quantity__button" name="plus" type="button">
+        <span class="visually-hidden">
+          {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+        </span>
+        {% render 'icon-plus' %}
+      </button>
+    </quantity-input>
   </div>
 
-<script>
-  function updateVariantId(selectElement) {
-  var selectedVariantIndex = selectElement.selectedIndex;
-  var selectedVariant = selectElement.options[selectedVariantIndex];
-  var variantId = selectedVariant.value;
+  <script>
+    function updateVariantId(selectElement) {
+      var selectedVariantIndex = selectElement.selectedIndex;
+      var selectedVariant = selectElement.options[selectedVariantIndex];
+      var variantId = selectedVariant.value;
 
-  // Aggiorna l'input nascosto con l'ID della variante selezionata
-  document.querySelector('input[name="id"]').value = variantId;
-}
-</script>
+      // Aggiorna l'input nascosto con l'ID della variante selezionata
+      document.querySelector('input[name="variant_id"]').value = variantId;
+    }
+  </script>
 
   <script type="application/json" data-selected-variant>{{ product.selected_or_first_available_variant | json }}</script>
 </variant-selects>
