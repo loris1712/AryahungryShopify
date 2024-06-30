@@ -29,11 +29,12 @@
         "padding_bottom": 52
       }
     },
-    "contact_form_fPDGRU": {
+    "contact_form_w97Gha": {
       "type": "contact-form",
       "settings": {
         "heading": "FOR MERCHANDISE",
         "buttonText": "SUBMIT",
+        "requestType": "MERCH",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
@@ -49,11 +50,12 @@
         "padding_bottom": 52
       }
     },
-    "contact_form_9kqGMi": {
+    "contact_form_6MWapt": {
       "type": "contact-form",
       "settings": {
         "heading": "FOR BUSINESS",
         "buttonText": "SUBMIT",
+        "requestType": "BUSINESS",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
@@ -73,9 +75,9 @@
   "order": [
     "main",
     "custom_liquid_UNCYr3",
-    "contact_form_fPDGRU",
+    "contact_form_w97Gha",
     "custom_liquid_7zhUHK",
-    "contact_form_9kqGMi",
+    "contact_form_6MWapt",
     "custom_liquid_MnMyhf"
   ]
 }
