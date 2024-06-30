@@ -37,7 +37,6 @@
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    // font-family: var(--font-heading-family);
   }
 
   .banner-date {
@@ -52,6 +51,9 @@
   }
 
   @media screen and (max-width: 768px) {
+     .banner-wrapper{
+        padding-inline: 2.5rem;
+     }
     .banner-text-container {
       right: 0;
       left: 0;
