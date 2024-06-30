@@ -128,7 +128,7 @@
       "type": "featured-collection",
       "custom_css": [
         "h2 {color: #015a3c; text-align: center; text-transform: uppercase;}",
-        ".grid__item{min-width: fit-content;}"
+        ".grid__item {min-width: fit-content; margin-right: 16px;}"
       ],
       "settings": {
         "title": "Recommended",
