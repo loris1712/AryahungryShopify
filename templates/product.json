@@ -89,7 +89,7 @@
       ],
       "custom_css": [
         "h1 {color: #015a3c; text-transform: uppercase; line-height: 45px;}",
-        "p {line-height: 17px; text-transform: capitalize; font-family: space grotesk !important; margin-bottom: 2rem;}"
+        "p {line-height: 17px; text-transform: capitalize; margin-bottom: 2rem;}"
       ],
       "settings": {
         "enable_sticky_info": true,
