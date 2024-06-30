@@ -18,8 +18,8 @@
   {%- assign size_option = product.options_with_values | where: "name", "Size" | first -%}
   {%- assign color_option = product.options_with_values | where: "name", "Color" | first -%}
 
-  <select name="id" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId(this)">
-    {% for variant in card_product.variants %}
+  <select name="id" id="VariantSelector-{{ product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId(this)">
+    {% for variant in product.variants %}
       <option value="{{ variant.id }}">{{ variant.title }}</option>
     {% endfor %}
   </select>
