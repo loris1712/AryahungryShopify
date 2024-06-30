@@ -315,14 +315,14 @@
         {%- render 'loading-spinner' -%}
       </button>
     </modal-opener>-->
-    <form action="/cart/add" method="post" id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data">
+<form action="/cart/add" method="post" id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data">
   <input type="hidden" name="form_type" value="product">
   <input type="hidden" name="utf8" value="✓">
   <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" id="hidden-variant-id-{{ card_product.id }}">
 
   <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}">
     <!-- Size -->
-    <select name="option1" id="SizeSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
+    <select name="option1" id="SizeSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId('{{ card_product.id }}')">
       {% for option in card_product.options_with_values %}
         {% if option.name == 'Size' %}
           {% for value in option.values %}
@@ -333,7 +333,7 @@
     </select>
 
     <!-- Colors -->
-    <select name="option2" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
+    <select name="option2" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId('{{ card_product.id }}')">
       {% for option in card_product.options_with_values %}
         {% if option.name == 'Color' %}
           {% for value in option.values %}
@@ -355,6 +355,7 @@
 
   <button type="submit" class="quick-add__submit button button--full-width button--secondary" style="flex: 1;">BUY</button>
 </form>
+
 
     <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
       <div
