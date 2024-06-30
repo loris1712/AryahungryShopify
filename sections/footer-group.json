@@ -61,7 +61,7 @@
         "heading"
       ],
       "custom_css": [
-        "h2 {font-size: 8vw;}"
+        "h2 {font-size: 8vw; font-family: var(--font-heading-family);}"
       ],
       "settings": {
         "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
