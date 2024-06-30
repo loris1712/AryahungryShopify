@@ -76,6 +76,9 @@
 }
 
 /* base */
+body{
+  background-color: #F5F5F5;
+}
 
 .page-width {
   max-width: var(--page-width);
