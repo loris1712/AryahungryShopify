@@ -336,9 +336,10 @@
           <!-- Quantity -->
           <div class="quantity-selector" style="flex: 1;">
             <div class="quantity-input">
-              <button type="button" class="quantity__button">-</button>
+              <button type="button" class="quantity-button quantity__button quantity-button-minus">-</button>
               <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="quantity__input">
-              <button type="button" class="quantity__button">+</button>
+              <button type="button" class="quantity__button quantity-button quantity-button-plus">+</button>
+
             </div>
           </div>
     </div>
