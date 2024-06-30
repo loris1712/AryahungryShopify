@@ -3635,8 +3635,8 @@ details-disclosure > details {
 
 
 @font-face {
-font-family: 'Integral CF';
-src: url('IntegralCF-Heavy.woff') format('woff');
+font-family: "Integral CF";
+src: url("IntegralCF-Heavy.woff") format("woff");
 font-weight: normal;
 font-style: normal; }
 
