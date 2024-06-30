@@ -2829,6 +2829,7 @@ details[open] > .header__submenu {
 
   .header--top-center .header__inline-menu > .list-menu--inline {
     justify-content: center;
+    align-items: center;
   }
 
   .header--middle-left .header__inline-menu {
@@ -2882,7 +2883,7 @@ details[open] > .header__menu-item .icon-caret {
   color: #fff;
   text-underline-offset: 0.3rem;
   background-color: rgb(var(--color-foreground));
-  border-color: rgb(var(--color-foreground));
+  border-color: #015A3C!important;
 }
 
 .header__menu-item:hover .header__active-menu-item {
