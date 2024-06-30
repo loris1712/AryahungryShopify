@@ -316,7 +316,7 @@
       </button>
     </modal-opener>
     <div style="display: flex; align-items: center; width: 20%;">
-      <select name="color" id="ColorSelector-{{ card_product.id }}" class="select__select">
+      <select name="color" id="ColorSelector-{{ card_product.id }}" class="card_select">
             {% for option in card_product.options_with_values %}
               {% if option.name == 'Color' %}
                 {% for value in option.values %}
