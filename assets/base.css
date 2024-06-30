@@ -347,7 +347,12 @@ h5,
 h1,
 .h1 {
   font-size: calc(var(--font-heading-scale) * 3rem);
-      font-family: var(--font-heading-family);
+      font-family: var(--font-heading-family) !important;
+}
+
+h2,
+.h2 {
+      font-family: var(--font-heading-family) !important;
 }
 
 @media only screen and (min-width: 750px) {
@@ -601,6 +606,7 @@ hr {
   text-align: center;
   font-size: 24px;
   text-decoration: none;
+  font-family: var(--font-heading-family);}
 }
 
 .placeholder {
@@ -956,9 +962,6 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (max-width: 749px) {
-  .grid__item {
-    min-width: fit-content!important;
-  }
   .grid__item.slider__slide--full-width {
     width: 100%;
     max-width: none;

@@ -127,7 +127,8 @@
     "featured_collection_nKynK8": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {color: #015a3c; text-align: center; text-transform: uppercase;}"
+        "h2 {color: #015a3c; text-align: center; text-transform: uppercase;}",
+        "@media screen and (max-width: 749px) {.grid__item {min-width: fit-content; margin-right: 16px;}}"
       ],
       "settings": {
         "title": "Recommended",
