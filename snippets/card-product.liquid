@@ -315,6 +315,8 @@
         {%- render 'loading-spinner' -%}
       </button>
     </modal-opener>
+    <form action="/cart/add" method="post" id="add-to-cart-form">
+
     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}">
       <select name="color" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
             {% for option in card_product.options_with_values %}
@@ -343,24 +345,9 @@
             </div>
           </div>
     </div>
-     <div class="product-form__buttons">
-      <button
-        type="submit"
-        name="add"
-        class="product-form__submit button button--full-width button--primary"
-        {% if product.selected_or_first_available_variant.available == false %}
-          disabled
-        {% endif %}
-      >
-        <span>
-          {%- if product.selected_or_first_available_variant.available -%}
-            Add to Cart
-          {%- else -%}
-            {{ 'products.product.sold_out' | t }}
-          {%- endif -%}
-        </span>
-      </button>
-    </div>
+        <button type="submit" class="btn btn--full add-to-cart-button">Add to Cart</button>
+
+    </form>
     <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
       <div
         role="dialog"
