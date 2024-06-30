@@ -36,26 +36,6 @@
     </div>
   {%- endif -%}
 
-  <div style="display: flex; align-items: center;">
-      {%- if color_option -%}
-
-    <div class="" style="width: 50%; margin-right: 1rem;">
-      <div class="select" style="width: 100%;">
-        <select
-          id="Option-{{ section.id }}-size"
-          class="select__select"
-          name="options[{{ color_option.name | escape }}]"
-          form="{{ product_form_id }}"
-        >
-          {% for value in color_option.values %}
-            <option value="{{ value }}">{{ value }}</option>
-          {% endfor %}
-        </select>
-        {% render 'icon-caret' %}
-      </div>
-    </div>
-  {%- endif -%}
-
   <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}" style="width: 100%; margin-bottom: 1rem;">
                         <button class="quantity__button" name="minus" type="button">
                           <span class="visually-hidden">
