@@ -6,6 +6,10 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .field:after{
+    box-shadow: none;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -18,6 +22,7 @@
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
       <h2
+        style="text-align: center; color: #015A3C;"
        class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.heading }}
       </h2>
@@ -60,7 +65,7 @@
             id="ContactForm-name"
             name="contact[{{ 'templates.contact.form.name' | t }}]"
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-            placeholder="{{ 'templates.contact.form.name' | t }}"
+            placeholder="NAME"
           >
           <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         </div>
@@ -102,7 +107,7 @@
           id="ContactForm-body"
           class="text-area field__input"
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
-          placeholder="{{ 'templates.contact.form.comment' | t }}"
+          placeholder="MESSAGE"
         >
           {{- form.body -}}
         </textarea>
@@ -111,7 +116,7 @@
         </label>
       </div>
       <div class="contact__button">
-        <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem;">
+        <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem; width: 228px;">
           {{ section.settings.buttonText }}
         </button>
       </div>
