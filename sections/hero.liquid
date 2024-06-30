@@ -4,12 +4,16 @@
 
 {% liquid
     assign release_date = section.settings.date
-    assign current_date = 'now' | date: "MM/DD/YYYY hh:mm:ss"
 %}
-<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
 
+<script>
+    var releaseDate = {{ release_date }};
+    var currentDate = new Date();
+    console.log({ releaseDate, currentDate });
+</script>
 
 <div class="banner-wrapper page-width">
+
   <img
     class="banner-img"
     srcset="{{ section.settings.banner_image | image_url: width:760 }}, {{ section.settings.banner_image | image_url: width: 760 }} 2x"
