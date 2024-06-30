@@ -927,6 +927,12 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+@media screen and (min-width: 1100px) {
+  .product__media-item:last-child{
+    max-width: none !important;
+  }
+}
+
 @media screen and (min-width: 989px) and (max-width: 1200px) {
   .grid {
     display: flex;
@@ -1837,6 +1843,7 @@ details[open] > .share-button__fallback {
 
 .field__input::placeholder,
 .customer .field input::placeholder {
+  opacity: 0;
 }
 
 .field__button {
