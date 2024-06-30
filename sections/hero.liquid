@@ -3,21 +3,21 @@
 <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js" defer></script>
 
 {% liquid
-    assign release_date = section.settings.date
-    assign current_date = 'now' | date: "MM/DD/YYYY hh:mm:ss"
+  assign release_date = section.settings.date
+  assign current_date = 'now' | date: 'MM/DD/YYYY hh:mm:ss'
 %}
 
 <script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
 
 <script>
-    var releaseDate = {{ release_date }};
-    var currentDate = new Date();
-    console.log({ releaseDate, currentDate });
+      document.addEventListener('DOMContentLoaded', function() {
+      var releaseDate = new Date('{{ release_date }}').getTime();
+      var currentDate = new Date('{{current_date}}').getTime()
+      console.log({ releaseDate, currentDate });
+  })
 </script>
 
-
 <div class="banner-wrapper page-width">
-    
   <img
     class="banner-img"
     srcset="{{ section.settings.banner_image | image_url: width:760 }}, {{ section.settings.banner_image | image_url: width: 760 }} 2x"
