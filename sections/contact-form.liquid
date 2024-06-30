@@ -83,11 +83,12 @@
     {%- liquid
       assign contact_form_class = 'isolate'
       assign form_id = section.id
+      assign redirect = "/pages/contact-success"
       if settings.animations_reveal_on_scroll
         assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
       endif
     -%}
-    {%- form 'contact', id: form_id, class: contact_form_class, return_to: "{{ shop.url }}/pages/contact-success" -%}
+    {%- form 'contact', id: form_id, class: contact_form_class, redirect_to: redirect, return_to: redirect  -%}
       <div class="form-wrapper">
         <input type="hidden" name="contact[requestType]" id="requestType" value="{{ section.settings.requestType }}"/>
         <input
