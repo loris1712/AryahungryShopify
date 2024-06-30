@@ -315,7 +315,7 @@
         {%- render 'loading-spinner' -%}
       </button>
     </modal-opener>-->
-        <form action="/cart/add" method="post" id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <form action="/cart/add" method="post" id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data">
 <input type="hidden" name="form_type" value="product">
       <input type="hidden" name="utf8" value="✓">
       <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
