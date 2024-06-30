@@ -23,8 +23,8 @@
         "heading_U9WRpA": {
           "type": "heading",
           "settings": {
-            "heading": "Thanks",
-            "heading_size": "h1"
+            "heading": "THANKS",
+            "heading_size": "h2"
           }
         },
         "text_ULLyMX": {
@@ -53,7 +53,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
