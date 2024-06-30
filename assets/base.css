@@ -928,8 +928,8 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 1100px) {
-  .product-images-gallery li .product__media{
-    width: 51vw;
+  .product__media-item:last-child{
+    max-width: none !important;
   }
 }
 
