@@ -43,7 +43,7 @@
         "text_JMbyRX"
       ],
       "custom_css": [
-        ".rich-text__text p {line-height: 22px; font-family: space grotesk !important;}"
+        ".rich-text__text p {line-height: 22px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
