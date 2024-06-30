@@ -249,19 +249,8 @@
                     | item_count_for_variant: product.selected_or_first_available_variant.id
                   -%}
 
-                  {% # theme-check-enable %}
-                  <select class="size-select">
-                    {% for size in product.metafields.category.size.value %}
-                      <option value="{{size}}">{{ size }}</option>
-                    {% endfor %}
-                  </select>
                   <div class="price-per-item__container">
                     <div class="product-quantity-wrapper">
-                      <select class="size-select">
-                        <option>White</option>
-                        <option>Black</option>
-                        <option>Red</option>
-                      </select>
                       <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
                         <button class="quantity__button" name="minus" type="button">
                           <span class="visually-hidden">
