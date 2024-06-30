@@ -4,7 +4,6 @@
 
 {% liquid
   assign release_date = section.settings.date
-  assign current_date = 'now' | date: 'MM/DD/YYYY hh:mm:ss'
 %}
 
 <script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
@@ -12,7 +11,7 @@
 <script>
       document.addEventListener('DOMContentLoaded', function() {
       var releaseDate = new Date('{{ release_date }}').getTime();
-      var currentDate = new Date('{{current_date}}').getTime()
+      var currentDate = moment.now().format('MM/DD/YYYY hh:mm:ss')
       console.log({ releaseDate, currentDate });
   })
 </script>
