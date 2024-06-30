@@ -30,7 +30,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".shopify-payment-button__button {background: #015a3c;}"
+        ".shopify-payment-button__button {background: #015a3c;}",
+        ".grid__item {max-width: 390px; min-width: auto; justify-self: center;}"
       ],
       "settings": {
         "products_per_page": 24,
