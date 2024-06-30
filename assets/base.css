@@ -11,6 +11,8 @@
 
 .product-card-wrapper .card,
 .contains-card--product {
+  background-color: #fff;
+  background: #fff;
   --border-radius: var(--product-card-corner-radius);
   --border-width: var(--product-card-border-width);
   --border-opacity: var(--product-card-border-opacity);
