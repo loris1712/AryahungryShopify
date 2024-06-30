@@ -239,7 +239,7 @@
 
               <select name="id" id="VariantSelector-{{ product.id }}" class="card_select" style="flex: 1; width: 100%; margin-bottom: 1rem;" onchange="updateVariantId(this)">
                 {% for variant in product.variants %}
-                  <option value="{{ variant.id }}">{{ variant.title }}</option>
+                  <option value="{{ variant.id }}">{{ variant.title }} Ciao</option>
                 {% endfor %}
               </select>
               {%- when 'quantity_selector' -%}
