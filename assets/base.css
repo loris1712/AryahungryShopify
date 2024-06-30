@@ -148,6 +148,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   border: 2px solid #015a3c;
 }
 
+.quantity-input input{
+  width: 2vw;
+}
+
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
