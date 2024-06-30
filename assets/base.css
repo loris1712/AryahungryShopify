@@ -146,6 +146,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 .quantity-input{
   border: 2px solid #015a3c;
+      padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 8px;
 }
 
 .quantity-input input{
