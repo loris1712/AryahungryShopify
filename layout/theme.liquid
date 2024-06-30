@@ -50,7 +50,14 @@
         var currentValue = parseInt(input.value);
         input.value = currentValue + 1;
       }
+      
     });
+
+    function updateVariantId(select) {
+    var form = select.closest('form');
+    var variantIdInput = form.querySelector('input[name="id"]');
+    variantIdInput.value = select.value;
+  }
   });
 </script>
 
