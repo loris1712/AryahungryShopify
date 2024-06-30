@@ -3643,6 +3643,6 @@ font-style: normal; }
 
 @font-face {
 font-family: 'SpaceGrotesk';
-src: url('{{ 'SpaceGrotesk Medium.woff' | asset_url }}'),
+src: url('SpaceGrotesk Medium.woff');
 font-weight: normal;
 font-style: normal; }
