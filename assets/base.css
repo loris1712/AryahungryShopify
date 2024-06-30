@@ -135,7 +135,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 .card_select{
       border: 2px solid #015a3c;
     height: 44px;
-    width: 100%;
     outline: none;
     padding-inline: 1rem;
     border-radius: 8px;
