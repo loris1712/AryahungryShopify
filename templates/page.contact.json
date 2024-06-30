@@ -32,7 +32,8 @@
     "contact_form_R3MrGk": {
       "type": "contact-form",
       "custom_css": [
-        ".contact__button button {background: #015A3C; border: none; padding-inline: 2rem;}"
+        ".contact__button {background: none;}",
+        ".contact__button button {background: #015a3c; border: none; padding-inline: 2rem; outline: none;}"
       ],
       "settings": {
         "heading": "FOR MERCHANCHISE",
