@@ -589,9 +589,9 @@ hr {
     margin: 7rem 0;
   }
 
-  .full-unstyled-link {
-  width: 18vw;
-}
+  .product-card-title {
+    width: 18vw;
+  }
 }
 
 .full-unstyled-link {
