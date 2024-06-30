@@ -6,8 +6,6 @@
   assign release_date = section.settings.date
 %}
 
-<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
-
 <script>
       document.addEventListener('DOMContentLoaded', function() {
       var releaseDate = new Date('{{ release_date }}').getTime();
