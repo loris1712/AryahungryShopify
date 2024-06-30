@@ -59,7 +59,7 @@
       "custom_css": [
         ".card__heading--placeholder {color: #015a3c;}",
         "slider-component {transform: rotate(-2deg) !important; margin: 8rem auto; display: block; align-items: center; align-self: center;}",
-        "@media (max-width: 450px){.quantity__button {\/* width: calc(4.5rem \/ var(--font-body-scale)); *\/ flex-shrink: 0; font-size: 1.8rem; border: 0; background-color: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; color: rgb(var(--color-foreground)); padding: 0;} }"
+        "@media (max-width: 450px) {.quantity__button {width: calc(1.5rem \/ var(--font-body-scale)); flex-shrink: 0; font-size: 1.8rem; border: 0; background-color: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; color: rgb(var(--color-foreground)); padding: 0; }}"
       ],
       "settings": {
         "title": "",
