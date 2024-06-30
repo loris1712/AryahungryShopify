@@ -123,7 +123,18 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   .page-width-tablet {
     padding: 0 5rem;
   }
+
+  .product-page-variants{
+  width: 85%;
 }
+}
+
+@media screen and (max-width: 768px) {
+  .product-page-variants{
+  width: 100%;
+}
+}
+
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
