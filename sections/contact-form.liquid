@@ -81,8 +81,7 @@
           </li>
         </ul>
       {%- endif -%}
-      <div class="field">
-          <input
+      <input
             class="field__input"
             autocomplete="name"
             type="text"
@@ -90,9 +89,8 @@
             name="contact[{{ 'templates.contact.form.name' | t }}]"
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             placeholder="NAME"
-          >
-        </div>
-      <div class="field field--with-error">
+          />
+      <div class=" field--with-error">
           <input
             autocomplete="email"
             type="email"
@@ -108,7 +106,7 @@
               aria-describedby="ContactForm-email-error"
             {% endif %}
             placeholder="EMAIL"
-          >
+          />
           {%- if form.errors contains 'email' -%}
             <small class="contact__field-error" id="ContactForm-email-error">
               <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
@@ -120,7 +118,7 @@
             </small>
           {%- endif -%}
         </div>
-      <div class="field">
+      <div >
         <textarea
           rows="10"
           id="ContactForm-body"
@@ -131,11 +129,9 @@
           {{- form.body -}}
         </textarea>
       </div>
-      <div class="contact__button">
-        <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem; width: 228px;">
+      <button type="submit" class="button" style="padding-left: 2rem; padding-right: 2rem; width: 228px;">
           {{ section.settings.buttonText }}
         </button>
-      </div>
     {%- endform -%}
   </div>
 </div>
