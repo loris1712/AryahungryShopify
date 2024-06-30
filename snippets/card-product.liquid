@@ -315,7 +315,7 @@
         {%- render 'loading-spinner' -%}
       </button>
     </modal-opener>
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info">
       <select name="color" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
             {% for option in card_product.options_with_values %}
               {% if option.name == 'Color' %}
