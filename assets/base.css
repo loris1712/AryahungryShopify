@@ -916,6 +916,7 @@ summary::-webkit-details-marker {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  width: var(--page-width)
   margin-bottom: 2rem;
   padding: 0;
   list-style: none;
@@ -935,8 +936,8 @@ summary::-webkit-details-marker {
 }
 
 .grid__item {
-  width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
-  max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
+  width: 100%;
+  max-width: 400px;
   flex-grow: 1;
   flex-shrink: 0;
   min-width: fit-content;
