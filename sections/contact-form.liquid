@@ -89,7 +89,7 @@
     -%}
     {%- form 'contact', id: form_id, class: contact_form_class, return_to: "{{ shop.url }}/pages/contact-success" -%}
       <div class="form-wrapper">
-        <input type="hidden" name="contact[requestType]" id="requestType" value="{{section.settings.requestType}}"/>
+        <input type="hidden" name="contact[requestType]" id="requestType" value="{{ section.settings.requestType }}"/>
         <input
           class="form__input"
           autocomplete="name"
