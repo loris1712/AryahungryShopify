@@ -112,6 +112,7 @@
         {% endcomment %}
       {%- endif -%}
       <div class="form-wrapper">
+        <input type="hidden" name="contact[requestType]" value="{{section.settings.requestType}}"/>
         <input
           class="form__input"
           autocomplete="name"
