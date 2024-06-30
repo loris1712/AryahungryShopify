@@ -88,29 +88,6 @@
       endif
     -%}
     {%- form 'contact', id: form_id, class: contact_form_class, return_to: "pages/form-submit" -%}
-      {%- if form.posted_successfully? -%}
-        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
-          {% render 'icon-success' %}
-          {{ 'templates.contact.form.post_success' | t }}
-        </h2>
-      {%- elsif form.errors -%}
-        {% comment %}
-          <div class="form__message">
-            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
-              {% render 'icon-error' %}
-              {{ 'templates.contact.form.error_heading' | t }}
-            </h2>
-          </div>
-          <ul class="form-status-list caption-large" role="list">
-            <li>
-              <a href="#ContactForm-email" class="link">
-                {{ form.errors.translated_fields.email | capitalize }}
-                {{ form.errors.messages.email }}
-              </a>
-            </li>
-          </ul>
-        {% endcomment %}
-      {%- endif -%}
       <div class="form-wrapper">
         <input type="hidden" name="contact[requestType]" value="{{section.settings.requestType}}"/>
         <input
