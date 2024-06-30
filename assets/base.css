@@ -3636,13 +3636,13 @@ details-disclosure > details {
 
 @font-face {
 font-family: 'Integral CF';
-src: url('IntegralCF-Heavy.woff') format('woff'),
+src: url('IntegralCF-Heavy.woff') format('woff');
 font-weight: normal;
 font-style: normal; }
 
 
 @font-face {
 font-family: 'SpaceGrotesk';
-src: url('SpaceGrotesk Medium.woff') format('woff'),
+src: url('SpaceGrotesk Medium.woff') format('woff');
 font-weight: normal;
 font-style: normal; }
