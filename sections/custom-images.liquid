@@ -71,18 +71,27 @@
     }
 
     .custom-image-2 {
-    transition: all 0.3s ease;
-    top: 70% !important;
-    right: 0%;
-    z-index: 1;
-  }
+        width: 50%;
+    }
 
     .custom-image img {
       width: 300px;
     }
+
+    .custom-image-2-div{
+            width: fit-content;
+    margin-left: auto;
+    display: flex;
+
+      }
   }
 
     @media (min-width: 767px) {
+
+      .custom-image-2-div{
+        width: fit-content; 
+        margin-left:auto;
+      }
 
       .custom-image img {
         width: 70%;
@@ -117,7 +126,7 @@
   <div class="custom-image">
     <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="First Image" width="50%" height="50%">
   </div>
-  <div style="width: fit-content; margin-left:auto;">
+  <div class="custom-image-2-div" >
     <img src="{{ section.settings.image_2 | img_url: 'master' }}" class="custom-image-2" alt="Second Image" width="300px" height="50%">
   </div>
 </div>
