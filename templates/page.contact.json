@@ -29,15 +29,12 @@
         "padding_bottom": 52
       }
     },
-    "contact_form_R3MrGk": {
+    "contact_form_KhDaTj": {
       "type": "contact-form",
-      "custom_css": [
-        ".contact__button {background: none;}",
-        ".contact__button button {background: #015a3c; border: none; padding-inline: 2rem; outline: none;}"
-      ],
       "settings": {
-        "heading": "FOR MERCHANCHISE",
-        "heading_size": "h2",
+        "heading": "FOR MERCHANDISE",
+        "buttonText": "SUBMIT",
+        "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
@@ -50,6 +47,17 @@
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "contact_form_a3PtDK": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "FOR BUSINESS",
+        "buttonText": "SUBMIT",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_liquid_MnMyhf": {
@@ -65,8 +73,9 @@
   "order": [
     "main",
     "custom_liquid_UNCYr3",
-    "contact_form_R3MrGk",
+    "contact_form_KhDaTj",
     "custom_liquid_7zhUHK",
+    "contact_form_a3PtDK",
     "custom_liquid_MnMyhf"
   ]
 }
