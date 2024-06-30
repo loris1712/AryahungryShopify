@@ -82,7 +82,7 @@
     {%- endif -%}
     {%- liquid
       assign contact_form_class = 'isolate'
-      assign form_id = "{{ section.id }}"
+      assign form_id = section.id
       if settings.animations_reveal_on_scroll
         assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
       endif
