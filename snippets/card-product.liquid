@@ -327,17 +327,6 @@
       {% endfor %}
     </select>
 
-    <!-- Colors -->
-    <select name="option1" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
-      {% for option in card_product.options_with_values %}
-        {% if option.name == 'Color' %}
-          {% for value in option.values %}
-            <option value="{{ value }}">{{ value }}</option>
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-    </select>
-
     <!-- Quantity -->
     <div class="quantity-selector" style="flex: 1;">
       <div class="quantity-input">
