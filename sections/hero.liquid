@@ -1,5 +1,5 @@
 {% stylesheet %}
-      .banner-wrapper {
+  .banner-wrapper {
     position: relative;
     height: fit-content;
     padding-inline: 5rem;
@@ -50,6 +50,14 @@
     margin: 0;
     font-family: var(--font-heading-family);
     margin-top: -8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .banner-text-container {
+      right: 0;
+      left: 0;
+      padding: 0 1rem;
+    }
   }
 {% endstylesheet %}
 
