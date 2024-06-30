@@ -10,6 +10,13 @@
     box-shadow: none;
   }
 
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: var(--animation-slide-in);
+  }
+
   .form__input {
     border: 3px solid #015a3c;
     height: 44px;
@@ -97,7 +104,8 @@
           </li>
         </ul>
       {%- endif -%}
-      <input
+      <div class="form-wrapper">
+        <input
         class="form__input"
         autocomplete="name"
         type="text"
@@ -144,6 +152,7 @@
         >
           {{- form.body -}}
         </textarea>
+      </div>
       </div>
       <button
         type="submit"
