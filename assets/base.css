@@ -591,6 +591,8 @@ hr {
 
   .product-card-title {
     width: 18vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
