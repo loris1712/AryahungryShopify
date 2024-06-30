@@ -298,7 +298,7 @@
     endif
   -%}
   {%- if card_product.variants.size > 1 or qty_rules -%}
-    <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
+    <!--<modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
       <button
         id="{{ product_form_id }}-submit"
         type="submit"
@@ -314,7 +314,7 @@
         {%- endif -%}
         {%- render 'loading-spinner' -%}
       </button>
-    </modal-opener>
+    </modal-opener>-->
     <div style="display: flex; align-items: center; width: 20%;">
       <select name="color" id="ColorSelector-{{ card_product.id }}" class="card_select">
             {% for option in card_product.options_with_values %}
@@ -341,7 +341,24 @@
               <button type="button" class="quantity__button">+</button>
             </div>
           </div>
-      
+    </div>
+     <div class="product-form__buttons">
+      <button
+        type="submit"
+        name="add"
+        class="product-form__submit button button--full-width button--primary"
+        {% if product.selected_or_first_available_variant.available == false %}
+          disabled
+        {% endif %}
+      >
+        <span>
+          {%- if product.selected_or_first_available_variant.available -%}
+            Add to Cart
+          {%- else -%}
+            {{ 'products.product.sold_out' | t }}
+          {%- endif -%}
+        </span>
+      </button>
     </div>
     <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
       <div
