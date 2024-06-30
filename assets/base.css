@@ -290,7 +290,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: Integral CF;
+  font-family: "Integral CF";
   font-style: var(--font-heading-style);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
@@ -299,7 +299,7 @@ h5,
 }
 
 .p {
-  font-family: SpaceGrotesk;
+  font-family: "SpaceGrotesk";
   font-style: var(--font-heading-style);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
