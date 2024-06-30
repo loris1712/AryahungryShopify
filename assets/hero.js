@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       const bannerDate = document.getElementById('banner-date');
-      bannerDate.innerHTML = `${days} DAYS  ${hours} HR ${minutes} MIN ${seconds}SEC`;
+      bannerDate.innerHTML = `${days} DAYS  ${hours} HR ${minutes} MIN ${seconds} SEC`;
 
       if(distance < 0){
         clearInterval(countDownFunction);
