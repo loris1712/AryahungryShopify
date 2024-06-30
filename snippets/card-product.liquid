@@ -315,13 +315,13 @@
         {%- render 'loading-spinner' -%}
       </button>
     </modal-opener>-->
-        <form action="/cart/add" method="post" id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data">
+<form id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data">
   <input type="hidden" name="form_type" value="product">
   <input type="hidden" name="utf8" value="✓">
   
   <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}">
     <!-- Variants -->
-    <select name="id" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId(this)">
+    <select name="id" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
       {% for variant in card_product.variants %}
         <option value="{{ variant.id }}" {% if forloop.first %}selected{% endif %}>{{ variant.title }}</option>
       {% endfor %}
@@ -337,7 +337,8 @@
     </div>
   </div>
 
-  <button type="submit" class="quick-add__submit button button--full-width button--secondary" style="flex: 1;">BUY</button>
+  <!-- Bottone per aggiungere al carrello -->
+  <button type="button" class="quick-add__submit button button--full-width button--secondary" style="flex: 1;" onclick="addToCart('{{ card_product.id }}')">BUY</button>
 </form>
 
     <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
@@ -694,5 +695,28 @@
       });
     });
   });
+</script>
+
+<script>
+  function addToCart(productId) {
+    var form = document.getElementById('add-to-cart-form-' + productId);
+    var formData = new FormData(form);
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Prodotto aggiunto al carrello:', data);
+      // Esempio di azione successiva: mostrare un messaggio di successo
+      alert('Prodotto aggiunto al carrello!');
+    })
+    .catch(error => {
+      console.error('Errore durante l\'aggiunta al carrello:', error);
+      // Gestisci gli errori in base alle necessità
+      alert('Si è verificato un errore durante l\'aggiunta al carrello.');
+    });
+  }
 </script>
 
