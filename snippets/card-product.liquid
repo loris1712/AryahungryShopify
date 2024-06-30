@@ -315,49 +315,41 @@
         {%- render 'loading-spinner' -%}
       </button>
     </modal-opener>-->
-<form action="/cart/add" method="post" id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data">
-  <input type="hidden" name="form_type" value="product">
-  <input type="hidden" name="utf8" value="✓">
-  <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" id="hidden-variant-id-{{ card_product.id }}">
+        <form action="/cart/add" method="post" id="add-to-cart-form-{{ card_product.id }}" class="product-form" enctype="multipart/form-data">
+<input type="hidden" name="form_type" value="product">
+      <input type="hidden" name="utf8" value="✓">
+      <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
 
-  <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}">
-    <!-- Size -->
-    <select name="option1" id="SizeSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId('{{ card_product.id }}')">
-      {% for option in card_product.options_with_values %}
-        {% if option.name == 'Size' %}
-          {% for value in option.values %}
-            <option value="{{ value }}">{{ value }}</option>
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-    </select>
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}">
+      <select name="color" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
+            {% for option in card_product.options_with_values %}
+              {% if option.name == 'Color' %}
+                {% for value in option.values %}
+                  <option value="{{ value }}">{{ value }}</option>
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </select>
 
-    <!-- Colors -->
-    <select name="option2" id="ColorSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId('{{ card_product.id }}')">
-      {% for option in card_product.options_with_values %}
-        {% if option.name == 'Color' %}
-          {% for value in option.values %}
-            <option value="{{ value }}">{{ value }}</option>
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-    </select>
+          <!-- Variants -->
+          <select name="variant" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
+            {% for variant in card_product.variants %}
+              <option value="{{ variant.id }}">{{ variant.title }}</option>
+            {% endfor %}
+          </select>
 
-    <!-- Quantity -->
-    <div class="quantity-selector" style="flex: 1;">
-      <div class="quantity-input">
-        <button type="button" class="quantity__button quantity-button-minus-card">-</button>
-        <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="quantity__input">
-        <button type="button" class="quantity__button quantity-button-plus-card">+</button>
-      </div>
+          <!-- Quantity -->
+          <div class="quantity-selector" style="flex: 1;">
+            <div class="quantity-input">
+              <button type="button" class="quantity__button quantity-button-minus-card">-</button>
+              <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="quantity__input">
+              <button type="button" class="quantity__button quantity-button-plus-card">+</button>
+            </div>
+          </div>
     </div>
-  </div>
+            <button type="submit" class="quick-add__submit" style="flex: 1;">BUY</button>
 
-  <button type="submit" class="quick-add__submit button button--full-width button--secondary" style="flex: 1;">BUY</button>
-</form>
-
-
-
+        </form>
     <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
       <div
         role="dialog"
@@ -690,75 +682,27 @@
   </div>
 {%- endif -%}
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.body.addEventListener('click', function(event) {
+            <script>
+  document.addEventListener('DOMContentLoaded', function() {
     // Decrement quantity
-    if (event.target.classList.contains('quantity-button-minus-card')) {
-      var input = event.target.nextElementSibling;
-      var currentValue = parseInt(input.value);
-      if (currentValue > 1) {
-        input.value = currentValue - 1;
-      }
-    }
-
-    // Increment quantity
-    if (event.target.classList.contains('quantity-button-plus-card')) {
-      var input = event.target.previousElementSibling;
-      var currentValue = parseInt(input.value);
-      input.value = currentValue + 1;
-    }
-  });
-
-  // Update variant ID in the hidden input when an option is selected
-  window.updateVariantId = function(productId) {
-    var sizeSelect = document.getElementById('SizeSelector-' + productId);
-    var colorSelect = document.getElementById('ColorSelector-' + productId);
-    var hiddenVariantId = document.getElementById('hidden-variant-id-' + productId);
-
-    var selectedSize = sizeSelect.value;
-    var selectedColor = colorSelect.value;
-
-    var variantId;
-
-    // Loop through variants to find the matching one
-    window.card_products.forEach(function(product) {
-      if (product.id == productId) {
-        product.variants.forEach(function(variant) {
-          if (variant.option1 == selectedSize && variant.option2 == selectedColor) {
-            variantId = variant.id;
-          }
-        });
-      }
+    document.querySelectorAll('.quantity-button-minus').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var input = button.nextElementSibling;
+        var currentValue = parseInt(input.value);
+        if (currentValue > 1) {
+          input.value = currentValue - 1;
+        }
+      });
     });
 
-    if (variantId) {
-      hiddenVariantId.value = variantId;
-    } else {
-      console.log('No matching variant found');
-    }
-  };
-});
-
-// This script should be generated by Liquid to ensure card_products is populated
-{% assign card_products_json = '' %}
-{% for product in products %}
-  {% assign card_products_json = card_products_json | append: '{ "id": "' | append: product.id | append: '", "variants": [' %}
-  {% for variant in product.variants %}
-    {% assign card_products_json = card_products_json | append: '{ "id": "' | append: variant.id | append: '", "option1": "' | append: variant.option1 | append: '", "option2": "' | append: variant.option2 | append: '" }' %}
-    {% unless forloop.last %}
-      {% assign card_products_json = card_products_json | append: ',' %}
-    {% endunless %}
-  {% endfor %}
-  {% assign card_products_json = card_products_json | append: ']}' %}
-  {% unless forloop.last %}
-    {% assign card_products_json = card_products_json | append: ',' %}
-  {% endunless %}
-{% endfor %}
-
-<script>
-  window.card_products = [{{ card_products_json }}];
+    // Increment quantity
+    document.querySelectorAll('.quantity-button-plus').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var input = button.previousElementSibling;
+        var currentValue = parseInt(input.value);
+        input.value = currentValue + 1;
+      });
+    });
+  });
 </script>
-</script>
-
 
