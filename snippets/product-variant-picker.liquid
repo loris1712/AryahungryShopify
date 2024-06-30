@@ -18,25 +18,11 @@
   {%- assign size_option = product.options_with_values | where: "name", "Size" | first -%}
   {%- assign color_option = product.options_with_values | where: "name", "Color" | first -%}
 
-  {%- if size_option -%}
-    <div class="product-form__input product-form__input--dropdown">
-      <div class="select">
-        <select
-          id="Option-{{ section.id }}-size"
-          class="select__select"
-          name="options[{{ size_option.name | escape }}]"
-          form="{{ product_form_id }}"
-        >
-          {% for value in size_option.values %}
-            <option value="{{ value }}">{{ value }}</option>
-          {% endfor %}
-        </select>
-        {% render 'icon-caret' %}
-      </div>
-    </div>
-
-        
-  {%- endif -%}
+  <select name="id" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId(this)">
+    {% for variant in card_product.variants %}
+      <option value="{{ variant.id }}">{{ variant.title }}</option>
+    {% endfor %}
+  </select>
 
   <div style="display: flex; align-items: center;">
 
