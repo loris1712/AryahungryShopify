@@ -236,6 +236,12 @@
                     </div>
                   </details>
                 </div>
+
+              <select name="id" id="VariantSelector-{{ product.id }}" class="card_select" style="flex: 1; width: 100%; margin-bottom: 1rem;" onchange="updateVariantId(this)">
+                {% for variant in product.variants %}
+                  <option value="{{ variant.id }}">{{ variant.title }}</option>
+                {% endfor %}
+              </select>
               {%- when 'quantity_selector' -%}
                 <div
                   style="display: flex; flex-direction: column; gap: 8px; flex:1;"
