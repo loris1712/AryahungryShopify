@@ -2040,14 +2040,14 @@ input[type='checkbox'] {
 
 .quantity__button:focus,
 .quantity__input:focus {
-  background-color: rgb(var(--color-background));
+  background-color:transparent;
   z-index: 2;
 }
 
 .quantity__button:not(:focus-visible):not(.focused),
 .quantity__input:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
+  background-color: transparent;
 }
 
 .quantity__input:-webkit-autofill,
