@@ -306,15 +306,6 @@ h5,
   word-break: break-word;
 }
 
-.p {
-  font-family: 'SpaceGrotesk';
-  font-style: var(--font-heading-style);
-  letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
-  color: rgb(var(--color-foreground));
-  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
-  word-break: break-word;
-}
-
 .hxxl {
   font-size: clamp(
     calc(var(--font-heading-scale) * 5.6rem),
