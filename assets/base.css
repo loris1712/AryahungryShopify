@@ -124,9 +124,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding: 0 5rem;
   }
 
-  .product-page-variants{
-  width: 85%;
-}
 }
 
 @media screen and (max-width: 768px) {
