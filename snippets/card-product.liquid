@@ -315,8 +315,8 @@
         {%- render 'loading-spinner' -%}
       </button>
     </modal-opener>
-    <div style="display: flex; align-items: center;">
-      <select name="color" id="ColorSelector-{{ card_product.id }}" class="product-form__input">
+    <div style="display: flex; align-items: center; width: 20%;">
+      <select name="color" id="ColorSelector-{{ card_product.id }}" class="pselect__select">
             {% for option in card_product.options_with_values %}
               {% if option.name == 'Color' %}
                 {% for value in option.values %}
@@ -327,7 +327,7 @@
           </select>
 
           <!-- Variants -->
-          <select name="variant" id="VariantSelector-{{ card_product.id }}" class="product-form__input">
+          <select name="variant" id="VariantSelector-{{ card_product.id }}" class="select__select">
             {% for variant in card_product.variants %}
               <option value="{{ variant.id }}">{{ variant.title }}</option>
             {% endfor %}
@@ -336,9 +336,9 @@
           <!-- Quantity -->
           <div class="quantity-selector">
             <div class="quantity-input">
-              <button type="button" class="quantity-button quantity-button-minus">-</button>
-              <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="product-form__input">
-              <button type="button" class="quantity-button quantity-button-plus">+</button>
+              <button type="button" class="quantity__button">-</button>
+              <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="quantity__input">
+              <button type="button" class="quantity__button">+</button>
             </div>
           </div>
       
