@@ -12,7 +12,7 @@
     "custom_liquid_VzTVqY": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n h1{\ntext-align: center;\npadding:0;\nmargin:0;\ntext-transform: uppercase;\nfont-family: Integral CF;\ncolor: #015a3c;\n}\n<\/style>\n<h1>Shop<\/h1>",
+        "custom_liquid": "<style>\n h1{\ntext-align: center;\npadding:0;\nmargin:0;\ntext-transform: uppercase;\ncolor: #015a3c;\n}\n<\/style>\n<h1>Shop<\/h1>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
