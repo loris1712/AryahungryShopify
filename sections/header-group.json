@@ -26,10 +26,10 @@
         "announcement-bar-0"
       ],
       "custom_css": [
-
+        ".utility-bar{background-color: #015a3c !important;}"
       ],
       "settings": {
-        "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
+        "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
