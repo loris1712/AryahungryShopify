@@ -74,7 +74,7 @@
     "footer": {
       "type": "footer",
       "custom_css": [
-        "@media (max-width: 768px) {.footer__content-bottom-wrapper {display: flex; justify-content: center; align-items: center; }}"
+        "@media (max-width: 768px) {.footer__content-bottom-wrapper {margin-top: -12px; display: flex; justify-content: center; align-items: center; }}"
       ],
       "settings": {
         "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
