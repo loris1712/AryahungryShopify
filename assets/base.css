@@ -140,7 +140,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .collection{
-  width: 98%;
+  width: 98% !important;
 }
 
 .card_select {
