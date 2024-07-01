@@ -76,6 +76,7 @@
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": true,
+        "tilt": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
