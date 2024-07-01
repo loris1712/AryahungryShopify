@@ -291,16 +291,8 @@
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
           <div class="quick-add no-js-hidden">
-            <!-- Quantity -->
-      <div class="quantity-selector" style="flex: 1;">
-        <div class="quantity-input">
-          <button type="button" class="quantity__button quantity-button-minus-card">-</button>
-          <input type="number" id="Quantity-{{ card_product.id }}" name="quantity" value="1" min="1" class="quantity__input">
-          <button type="button" class="quantity__button quantity-button-plus-card">+</button>
-        </div>
-      </div>
   {%- liquid
-    assign qty_rules = false
+    assign qty_rules = true
     if card_product.selected_or_first_available_variant.quantity_rule.min > 1 or card_product.selected_or_first_available_variant.quantity_rule.max != null or card_product.selected_or_first_available_variant.quantity_rule.increment > 1
       assign qty_rules = true
     endif
