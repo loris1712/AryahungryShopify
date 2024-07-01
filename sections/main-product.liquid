@@ -249,7 +249,7 @@
                   {% # theme-check-enable %}
                   
                   <div class="price-per-item__container">
-                    <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}" style="width: 100%;">
+                    <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
                       <button class="quantity__button" name="minus" type="button">
                         <span class="visually-hidden">
                           {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
@@ -260,7 +260,6 @@
                         class="quantity__input"
                         type="number"
                         name="quantity"
-                        style="margin-left: auto; margin-right: auto;"
                         id="Quantity-{{ section.id }}"
                         data-cart-quantity="{{ cart_qty }}"
                         data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
