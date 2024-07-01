@@ -97,7 +97,7 @@
         "button_aQ8BYM": {
           "type": "button",
           "settings": {
-            "button_label": "Shop now",
+            "button_label": "Shop all",
             "button_link": "shopify:\/\/collections\/all",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -167,12 +167,6 @@
         "header": "FOLLOW ALONG<br>FOR UPDATES"
       }
     },
-    "17196760465c2535c0": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "171983547588f6527e": {
       "type": "apps",
       "blocks": {
@@ -183,18 +177,10 @@
             "contentIndex": "1",
             "autoscroll": true
           }
-        },
-        "tiktok_feed_grid_widget_block_ytXjtX": {
-          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/grid-widget-block\/a697d2ef-d149-464d-83c1-cd20e536ab68",
-          "settings": {
-            "themeId": "light",
-            "contentIndex": "1"
-          }
         }
       },
       "block_order": [
-        "tiktok_feed_carousel_widget_block_JVqjHF",
-        "tiktok_feed_grid_widget_block_ytXjtX"
+        "tiktok_feed_carousel_widget_block_JVqjHF"
       ],
       "settings": {
         "include_margins": true
@@ -207,7 +193,6 @@
     "featured_collection_GtRaDg",
     "rich_text_BdRUEb",
     "follow_gqR7aY",
-    "17196760465c2535c0",
     "171983547588f6527e"
   ]
 }
