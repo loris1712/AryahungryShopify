@@ -330,7 +330,8 @@
           <option value="{{ variant.id }}" {% if forloop.first %}selected{% endif %}>{{ variant.title }}</option>
         {% endfor %}
       </select>
-      
+
+      <!-- Quantity -->
       <div class="quantity-selector" style="flex: 1;">
         <div class="quantity-input">
           <button type="button" class="quantity__button quantity-button-minus-card">-</button>
@@ -732,30 +733,6 @@
         var input = button.previousElementSibling;
         var currentValue = parseInt(input.value);
         input.value = currentValue + 1;
-      });
-    });
-  });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const quantitySelectors = document.querySelectorAll('.quantity-selector');
-
-    quantitySelectors.forEach(selector => {
-      const minusButton = selector.querySelector('.quantity-button-minus-card');
-      const plusButton = selector.querySelector('.quantity-button-plus-card');
-      const quantityInput = selector.querySelector('.quantity__input');
-
-      minusButton.addEventListener('click', function () {
-        let currentValue = parseInt(quantityInput.value, 10);
-        if (currentValue > 1) {
-          quantityInput.value = currentValue - 1;
-        }
-      });
-
-      plusButton.addEventListener('click', function () {
-        let currentValue = parseInt(quantityInput.value, 10);
-        quantityInput.value = currentValue + 1;
       });
     });
   });
