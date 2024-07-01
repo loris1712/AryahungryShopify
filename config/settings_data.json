@@ -156,6 +156,18 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "13768625480086291342": {
+        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14429071373314833104": {
+        "type": "shopify:\/\/apps\/candy-rack\/blocks\/head\/cb9c657f-334f-4905-80c2-f69cca01460c",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
