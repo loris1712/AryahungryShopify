@@ -99,7 +99,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop now",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/all",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -115,8 +115,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
         "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 40
+        "padding_top": 80,
+        "padding_bottom": 100
       }
     },
     "follow_gqR7aY": {
