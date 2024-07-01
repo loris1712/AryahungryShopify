@@ -62,7 +62,7 @@
       "custom_css": [
         "slider-component .grid {flex-wrap: nowrap;}",
         ".card-wrapper {max-width: 400px; width: 100%;}",
-        "slider-component {margin: 8rem auto; display: flex; flex-direction: column; align-items: center; align-self: center;}",
+        "slider-component {margin: 0rem auto; display: flex; flex-direction: column; align-items: center; align-self: center;}",
         "@media (max-width: 450px) {.quantity__button {width: calc(1.5rem \/ var(--font-body-scale)); flex-shrink: 0; font-size: 1.8rem; border: 0; background-color: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; color: rgb(var(--color-foreground)); padding: 0; }}"
       ],
       "settings": {
@@ -77,7 +77,7 @@
         "full_width": true,
         "show_view_all": true,
         "tilt": true,
-        "view_all_style": "solid",
+        "view_all_style": "link",
         "enable_desktop_slider": true,
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
         "image_ratio": "adapt",
@@ -88,6 +88,33 @@
         "quick_add": "standard",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_BdRUEb": {
+      "type": "rich-text",
+      "blocks": {
+        "button_aQ8BYM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_aQ8BYM"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
+        "full_width": true,
         "padding_top": 0,
         "padding_bottom": 40
       }
@@ -170,6 +197,7 @@
     "hero_w4Lm7h",
     "rich_text_FExpBf",
     "featured_collection_GtRaDg",
+    "rich_text_BdRUEb",
     "follow_gqR7aY",
     "17196760465c2535c0",
     "171983547588f6527e"
