@@ -707,6 +707,13 @@
     .then(response => response.json())
     .then(data => {
       //console.log('Added:', data);
+       // Apri il drawer del carrello
+      if (typeof Shopify !== 'undefined' && Shopify && Shopify.Storefront && Shopify.Storefront.CartDrawer) {
+        Shopify.Storefront.CartDrawer.open();
+      } else {
+        // Fallback: ricarica la pagina
+        location.reload();
+      }
     })
     .catch(error => {
       //console.error('Error:', error);
