@@ -61,7 +61,7 @@
         "heading"
       ],
       "custom_css": [
-        "h2 {font-size: 8vw; font-family: var(--font-heading-family);}",
+        "h2 {font-size: 9.3vw; font-family: var(--font-heading-family);}",
         "@media (max-width: 767px) {h2 {font-size: 8.8vw; }}"
       ],
       "settings": {
