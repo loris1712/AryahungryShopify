@@ -3791,6 +3791,6 @@ details-disclosure > details {
     color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 20px;
-    font-family: 'SpaceGrotesk-Medium';
+    font-family: 'SpaceGrotesk-Medium' !important;
     text-transform: uppercase;
 }
