@@ -161,7 +161,7 @@
         "social_fqmDJf"
       ],
       "custom_css": [
-        "@media (max-width: 450px) {h2 {font-size: 24px; line-height: 1.1em; }"
+        "@media (max-width: 450px) {h2 {font-size: 30px; line-height: 1em; }}"
       ],
       "settings": {
         "header": "FOLLOW ALONG<br>FOR UPDATES"
