@@ -44,7 +44,8 @@
       ],
       "custom_css": [
         ".rich-text__text p {line-height: 22px; font-size: 14px;}",
-        "@media (max-width: 450px) {.h2 {font-size: 24px; line-height: 1.1em; }}"
+        "@media (max-width: 450px) {.h2 {font-size: 24px; line-height: 1.1em; }}",
+        "@media (max-width: 768px) {.rich-text__heading {font-size: 22px; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
