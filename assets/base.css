@@ -79,8 +79,6 @@
   color: #015a3c;
 }
 
-.Product-Name{ color: #015a3c !important; font-family: SpaceGrotesk-Medium, sans-serif !important; }
-
 @media screen and (max-width: 768px) {
       .doubly-float {
           left: auto !important;
