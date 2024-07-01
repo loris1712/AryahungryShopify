@@ -80,11 +80,7 @@
 }
 
       .doubly-float {
-          position: fixed;
-          bottom: 10px;
-          right: 10px;
-          left: auto;
-          z-index: 100000;
+          left: auto !important;
           scale: .7;
       }
 
