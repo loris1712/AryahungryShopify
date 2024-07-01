@@ -3769,3 +3769,7 @@ details-disclosure > details {
   font-weight: normal;
   font-style: normal;
 }
+
+.fsb_amount {
+    font-family: 'IntegralCF-Heavy' !important;
+}
