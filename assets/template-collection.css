@@ -12,6 +12,10 @@
 }
 
 .collection .loading-overlay {
+  width: 80% !important;
+}
+
+.collection .loading-overlay {
   position: absolute;
   z-index: 1;
   width: 1.8rem;
