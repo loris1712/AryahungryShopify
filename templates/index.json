@@ -76,7 +76,6 @@
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": true,
-        "tilt": true,
         "view_all_style": "link",
         "enable_desktop_slider": true,
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
@@ -184,10 +183,18 @@
             "contentIndex": "1",
             "autoscroll": true
           }
+        },
+        "tiktok_feed_grid_widget_block_ytXjtX": {
+          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/grid-widget-block\/a697d2ef-d149-464d-83c1-cd20e536ab68",
+          "settings": {
+            "themeId": "light",
+            "contentIndex": "1"
+          }
         }
       },
       "block_order": [
-        "tiktok_feed_carousel_widget_block_JVqjHF"
+        "tiktok_feed_carousel_widget_block_JVqjHF",
+        "tiktok_feed_grid_widget_block_ytXjtX"
       ],
       "settings": {
         "include_margins": true
