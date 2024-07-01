@@ -53,6 +53,8 @@
   margin: 0;
   font-family: var(--font-heading-family);
   margin-top: -8px;
+  max-width: 420px;
+  width:fit-content;
 }
 
 @media screen and (max-width: 768px) {
