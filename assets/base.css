@@ -299,7 +299,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: 'Integral CF';
+  font-family: 'IntegralCF-Heavy', sans-serif !important;
   font-style: var(--font-heading-style);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
