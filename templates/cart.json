@@ -11,6 +11,9 @@
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
+      "custom_css": [
+        ".title-wrapper-with-link .title {margin-bottom: 0; font-size: 17px; text-transform: uppercase;}"
+      ],
       "settings": {
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
         "padding_top": 36,
