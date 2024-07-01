@@ -937,7 +937,6 @@ summary::-webkit-details-marker {
 @media screen and (min-width: 989px) and (max-width: 1200px) {
   .grid {
     display: flex;
-    flex-wrap: nowrap;
   }
 }
 
