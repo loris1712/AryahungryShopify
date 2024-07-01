@@ -1707,6 +1707,7 @@ details[open] > .share-button__fallback {
   font-weight: var(--font-body-weight);
   font-size: 1.2rem;
   color: rgba(var(--color-foreground), 0.75);
+  font-family: SpaceGrotesk-Medium, sans-serif !important;
 }
 
 .field:hover.field:after,
@@ -1962,6 +1963,7 @@ input[type='checkbox'] {
   border-radius: var(--inputs-radius);
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
   padding-inline: 0.5rem;
+  font-family: SpaceGrotesk-Medium, sans-serif !important;
 }
 
 .quantity:after {
