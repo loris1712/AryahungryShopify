@@ -10,6 +10,10 @@ slider-component {
   display: block;
 }
 
+.tilt{
+  transform: rotate(-2deg) !important;
+}
+
 slider-component.slider-component-full-width {
   --desktop-margin-left-first-item: 1.5rem;
 }
