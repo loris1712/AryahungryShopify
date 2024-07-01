@@ -149,6 +149,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   caret-color: #015a3c;
   color: #015a3c;
   text-transform: capitalize;
+  font-family: 'SpaceGrotesk-Medium', sans-serif !important;
 }
 
 .quantity-input {
@@ -3759,9 +3760,4 @@ details-disclosure > details {
   src: url('{{ 'SpaceGroteskMedium.woff' | asset_url }}');
   font-weight: normal;
   font-style: normal;
-}
-
-
-.shopify-policy__title {
-  color:#015A3C;
 }
