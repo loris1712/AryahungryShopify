@@ -11,9 +11,13 @@
   }
 }
 
-.collection  {
-  width: 80% !important;
+@media screen and (max-width: 768px) {
+  .collection  {
+    width: 80% !important;
+  }
 }
+
+
 
 .collection .loading-overlay {
   position: absolute;
