@@ -325,11 +325,11 @@
   -%}
     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}">
       
-      <select name="id" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId(this)">
-        {% for variant in card_product.variants %}
-          <option value="{{ variant.id }}" {% if forloop.first %}selected{% endif %}>{{ variant.title }}</option>
-        {% endfor %}
-      </select>
+      <select name="id" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;">
+      {% for variant in card_product.variants %}
+        <option value="{{ variant.id }}" {% if forloop.first %}selected{% endif %}>{{ variant.title }}</option>
+      {% endfor %}
+    </select>
 
       <!-- Quantity -->
       <div class="quantity-selector" style="flex: 1;">
