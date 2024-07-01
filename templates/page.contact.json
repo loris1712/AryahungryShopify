@@ -31,6 +31,9 @@
     },
     "contact_form_w97Gha": {
       "type": "contact-form",
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.title {font-size: 33px !important; }}"
+      ],
       "settings": {
         "heading": "FOR MERCHANDISE",
         "buttonText": "SUBMIT",
@@ -52,6 +55,9 @@
     },
     "contact_form_6MWapt": {
       "type": "contact-form",
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.title {font-size: 33px !important; }}"
+      ],
       "settings": {
         "heading": "FOR BUSINESS",
         "buttonText": "SUBMIT",
