@@ -3770,6 +3770,6 @@ details-disclosure > details {
   font-style: normal;
 }
 
-.fsb_amount {
+#fsb_amount {
     font-family: 'IntegralCF-Heavy' !important;
 }
