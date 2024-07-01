@@ -367,7 +367,7 @@
     >
       <span>
         {%- if card_product.selected_or_first_available_variant.available -%}
-          {{ 'products.product.add_to_cart' | t }}
+          {{ 'products.product.add_to_cart' | t }}11
         {%- else -%}
           {{ 'products.product.sold_out' | t }}
         {%- endif -%}
@@ -499,7 +499,7 @@
                   data-sold-out-message="true"
                   disabled
                 >
-                  <span>{{ 'products.product.sold_out' | t }}11</span>
+                  <span>{{ 'products.product.sold_out' | t }}</span>
                   <span class="sold-out-message hidden">
                     {{ 'products.product.sold_out' | t }}
                   </span>
