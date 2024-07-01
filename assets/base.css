@@ -139,6 +139,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 
+.collection{
+  width: 98%;
+}
+
 .card_select {
   border: 2px solid #015a3c;
   height: 44px;
