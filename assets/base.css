@@ -79,11 +79,13 @@
   color: #015a3c;
 }
 
+@media screen and (max-width: 768px) {
       .doubly-float {
           left: auto !important;
           scale: .7;
           right: 0 !important;
       }
+}
 
 /* base */
 body{
