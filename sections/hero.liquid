@@ -3,11 +3,41 @@
 {% liquid
   assign release_date = section.settings.date
 %}
+<input id="herodateinput" value="{{release_date}}">
 
-<input id="herodateinput" value="{{release_date}}"/>
+
+{% javascript %}
+  const dateInput = document.getElementById('herodateinput')?.value;
+  const countdownDate = new Date(dateInput).getTime();
+
+  function update() {
+    const now = new Date().getTime();
+    var distance = countdownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    const bannerDate = document.getElementById('banner-date');
+    bannerDate.innerHTML = `${days} DAYS  ${hours} HR ${minutes} MIN ${seconds} SEC`;
+    return distance;
+  }
+
+  function setUpTime() {
+    if (dateInput) {
+      const distance = update();
+      const countDownFunction = setInterval(function () {
+        const distance = update();
+        if (distance < 0) {
+          clearInterval(countDownFunction);
+        }
+      }, 1000);
+    }
+  }
+{% endjavascript %}
 
 
-<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
 <div class="banner-wrapper page-width">
   <img
     class="banner-img"
