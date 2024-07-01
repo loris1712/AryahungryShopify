@@ -82,6 +82,7 @@
       .doubly-float {
           left: auto !important;
           scale: .7;
+          right: 0 !important;
       }
 
 /* base */
