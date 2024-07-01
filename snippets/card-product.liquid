@@ -739,22 +739,23 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const minusButtons = document.querySelectorAll('.quantity-button-minus-card');
-    const plusButtons = document.querySelectorAll('.quantity-button-plus-card');
+    const quantitySelectors = document.querySelectorAll('.quantity-selector');
 
-    minusButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        const quantityInput = this.nextElementSibling;
-        if (quantityInput.value > 1) {
-          quantityInput.value--;
+    quantitySelectors.forEach(selector => {
+      const minusButton = selector.querySelector('.quantity-button-minus-card');
+      const plusButton = selector.querySelector('.quantity-button-plus-card');
+      const quantityInput = selector.querySelector('.quantity__input');
+
+      minusButton.addEventListener('click', function () {
+        let currentValue = parseInt(quantityInput.value, 10);
+        if (currentValue > 1) {
+          quantityInput.value = currentValue - 1;
         }
       });
-    });
 
-    plusButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        const quantityInput = this.previousElementSibling;
-        quantityInput.value++;
+      plusButton.addEventListener('click', function () {
+        let currentValue = parseInt(quantityInput.value, 10);
+        quantityInput.value = currentValue + 1;
       });
     });
   });
