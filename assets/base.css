@@ -1270,6 +1270,8 @@ button.shopify-payment-button__button--unbranded {
   min-width: calc(12rem + var(--buttons-border-width) * 2);
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
   background-color: #015a3c;
+  font-family: 'SpaceGrotesk-Medium', sans-serif !important;
+  text-transform: uppercase;
 }
 
 .shopify-payment-button__button--branded {
