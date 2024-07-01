@@ -1,15 +1,14 @@
 {{ 'hero.css' | asset_url | stylesheet_tag }}
 
-<script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js" defer></script>
-
 {% liquid
   assign release_date = section.settings.date
 %}
 
-<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
+<input id="herodateinput" value="{{release_date}}"/>
 
+
+<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
 <div class="banner-wrapper page-width">
-    <input id="herodateinput" value="{{release_date}}"/>
   <img
     class="banner-img"
     srcset="{{ section.settings.banner_image | image_url: width:760 }}, {{ section.settings.banner_image | image_url: width: 760 }} 2x"

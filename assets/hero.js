@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+function setUpTime(){
   console.log('LOADING');
   const dateInput = document.getElementById('herodateinput')?.value;
   if (dateInput) {
@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
       const bannerDate = document.getElementById('banner-date');
       bannerDate.innerHTML = `${days} DAYS  ${hours} HR ${minutes} MIN ${seconds} SEC`;
 
-      if(distance < 0){
+      if (distance < 0) {
         clearInterval(countDownFunction);
       }
     }, 1000);
   }
   console.log('DONE');
-});
+}
+
+setUpTime();
