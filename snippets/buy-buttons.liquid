@@ -28,7 +28,6 @@
       class="product-form"
       data-hide-errors="{{ gift_card_recipient_feature_active }}"
       data-section-id="{{ section.id }}"
-      data-type="add-to-cart-form"
     >
       <div class="product-form__error-message-wrapper" role="alert" hidden>
         <svg
@@ -156,45 +155,3 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
-
-            <script>
-              document.addEventListener('DOMContentLoaded', function() {
-  // Funzione per aprire il carrello
-  function openCartDrawer() {
-    const cartDrawer = document.querySelector('[data-cart-drawer]');
-    if (cartDrawer) {
-      cartDrawer.classList.add('is-visible');
-    }
-  }
-
-  // Aggiungi l'event listener a tutti i form "Add to Cart"
-  const productForms = document.querySelectorAll('.product-form[data-type="add-to-cart-form"]');
-  productForms.forEach(function(form) {
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      const formData = new FormData(form);
-
-      fetch('/cart/add.js', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'X-Requested-With': 'XMLHttpRequest',
-          'Content-Type': 'application/x-www-form-urlencoded'
-        }
-      })
-      .then(response => response.json())
-      .then(data => {
-        if (!data.errors) {
-          openCartDrawer();
-        } else {
-          console.error('Error adding to cart:', data.errors);
-        }
-      })
-      .catch(error => {
-        console.error('Error adding to cart:', error);
-      });
-    });
-  });
-});
-
-            </script>
