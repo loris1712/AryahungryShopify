@@ -39,10 +39,11 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".header-wrapper{background: #f5f5f5; margin-bottom: 1rem;}",
+        ".header-wrapper {background: #f5f5f5; margin-bottom: 1rem;}",
         ".header {display: flex; align-items: center; justify-content: space-between; background: #f5f5f5;}",
-        ".header__icons {display: none;}",
-        "@media screen and (min-width: 990px) {.header--middle-left {grid-template-areas: \"heading navigation icons\"; grid-template-columns: auto auto 1fr; column-gap: 2rem; }}"
+        "@media (min-width: 990px){.header__icons {display: none;}}",
+        "@media screen and (min-width: 990px) {.header--middle-left {grid-template-areas: \"heading navigation icons\"; grid-template-columns: auto auto 1fr; column-gap: 2rem; }}",
+        ".link,.customer a {font-family: 'SpaceGrotesk-Medium', sans-serif;}"
       ],
       "settings": {
         "logo_position": "middle-left",
