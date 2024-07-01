@@ -17,7 +17,7 @@
   height: auto;
   width: 100%;
   object-fit: contain;
-  object-position: left;
+  object-position: center;
   position: relative;
 }
 
