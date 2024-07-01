@@ -144,6 +144,24 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "171983547588f6527e": {
+      "type": "apps",
+      "blocks": {
+        "tiktok_feed_grid_widget_block_zVArfd": {
+          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/grid-widget-block\/a697d2ef-d149-464d-83c1-cd20e536ab68",
+          "settings": {
+            "themeId": "light",
+            "contentIndex": "4"
+          }
+        }
+      },
+      "block_order": [
+        "tiktok_feed_grid_widget_block_zVArfd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -151,6 +169,7 @@
     "rich_text_FExpBf",
     "featured_collection_GtRaDg",
     "follow_gqR7aY",
-    "17196760465c2535c0"
+    "17196760465c2535c0",
+    "171983547588f6527e"
   ]
 }
