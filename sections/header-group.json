@@ -42,7 +42,8 @@
         ".header-wrapper {background: #f5f5f5; margin-bottom: 1rem;}",
         ".header {display: flex; align-items: center; justify-content: space-between; background: #f5f5f5;}",
         "@media screen and (min-width: 990px) {.header--middle-left {grid-template-areas: \"heading navigation icons\"; grid-template-columns: auto auto 1fr; column-gap: 2rem; }}",
-        ".link,.customer a {font-family: \"SpaceGrotesk-Medium\", sans-serif;}"
+        ".link,.customer a {font-family: \"SpaceGrotesk-Medium\", sans-serif;}",
+        "@media (max-width: 495px){.link{font-size: 31px; line-height: 1em; font-family: Integral CF;} }"
       ],
       "settings": {
         "logo_position": "middle-left",
