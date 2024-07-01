@@ -325,7 +325,7 @@
       -%}
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;" id="QuickAddInfo-{{ card_product.id }}">
           
-          <select name="id2" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId(this)">
+          <select name="id" id="VariantSelector-{{ card_product.id }}" class="card_select" style="flex: 1;" onchange="updateVariantId(this)">
             {% for variant in card_product.variants %}
               <option value="{{ variant.id }}" {% if forloop.first %}selected{% endif %}>{{ variant.title }}</option>
             {% endfor %}
@@ -343,7 +343,7 @@
         
         <input
           type="hidden"
-          name="id2"
+          name="id"
           value="{{ card_product.selected_or_first_available_variant.id }}"
           class="product-variant-id"
           {% if card_product.selected_or_first_available_variant.available == false %}
