@@ -429,6 +429,7 @@ quick-add-modal .product-form__buttons {
   background: #015a3c;
   border-radius: 8px;
   text-transform: uppercase;
+  font-family: 'SpaceGrotesk-Medium', sans-serif !important;
 }
 
 quick-add-modal .product-media-container.constrain-height {
