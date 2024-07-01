@@ -62,7 +62,7 @@
       ],
       "custom_css": [
         "h2 {font-size: 8vw; font-family: var(--font-heading-family);}",
-        "@media (max-width: 767px) {h2 {font-size: 7vw; }}"
+        "@media (max-width: 767px) {h2 {font-size: 8vw; }}"
       ],
       "settings": {
         "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
