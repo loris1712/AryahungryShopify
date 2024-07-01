@@ -177,16 +177,17 @@
     "171983547588f6527e": {
       "type": "apps",
       "blocks": {
-        "tiktok_feed_grid_widget_block_zVArfd": {
-          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/grid-widget-block\/a697d2ef-d149-464d-83c1-cd20e536ab68",
+        "tiktok_feed_carousel_widget_block_JVqjHF": {
+          "type": "shopify:\/\/apps\/tiktok-feed\/blocks\/carousel-widget-block\/a697d2ef-d149-464d-83c1-cd20e536ab68",
           "settings": {
             "themeId": "light",
-            "contentIndex": "4"
+            "contentIndex": "1",
+            "autoscroll": true
           }
         }
       },
       "block_order": [
-        "tiktok_feed_grid_widget_block_zVArfd"
+        "tiktok_feed_carousel_widget_block_JVqjHF"
       ],
       "settings": {
         "include_margins": true
