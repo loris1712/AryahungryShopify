@@ -8,6 +8,7 @@ slider-component {
   );
   position: relative;
   display: block;
+  transform: rotate(-2deg) !important;
 }
 
 slider-component.slider-component-full-width {
