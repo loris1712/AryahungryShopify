@@ -706,18 +706,45 @@
     })
     .then(response => response.json())
     .then(data => {
-      //console.log('Added:', data);
-       // Apri il drawer del carrello
-      if (typeof Shopify !== 'undefined' && Shopify && Shopify.Storefront && Shopify.Storefront.CartDrawer) {
-        Shopify.Storefront.CartDrawer.open();
-      } else {
-        // Fallback: ricarica la pagina
-        location.reload();
-      }
+      openCartDrawer();
+      // Aggiorna il contenuto del carrello nel drawer
+      updateCartDrawerContent();
     })
     .catch(error => {
       //console.error('Error:', error);
     });
+  }
+
+  function openCartDrawer() {
+    var cartDrawer = document.getElementById('cart-drawer');
+    if (cartDrawer) {
+      cartDrawer.classList.add('open');
+    }
+  }
+
+  function closeCartDrawer() {
+    var cartDrawer = document.getElementById('cart-drawer');
+    if (cartDrawer) {
+      cartDrawer.classList.remove('open');
+    }
+  }
+
+  function updateCartDrawerContent() {
+    fetch('/cart')
+      .then(response => response.text())
+      .then(html => {
+        var cartDrawerContent = document.getElementById('cart-drawer-content');
+        if (cartDrawerContent) {
+          // Estrai il contenuto del carrello dalla risposta HTML
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, 'text/html');
+          var cartContent = doc.querySelector('.cart');
+          cartDrawerContent.innerHTML = cartContent.innerHTML;
+        }
+      })
+      .catch(error => {
+        console.error('Error updating cart drawer content:', error);
+      });
   }
 </script>
 
