@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "FREE SHIPPING OVER $100",
             "link": ""
           }
         }
@@ -25,9 +25,11 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
-        "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
+        "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
