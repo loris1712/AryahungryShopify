@@ -3777,3 +3777,20 @@ details-disclosure > details {
 #fsb_symbol {
     font-family: 'IntegralCF-Heavy' !important;
 }
+
+#fsb_bar {
+    text-align: center;
+    margin: 0px;
+    padding: 12px 10px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(1, 90, 60);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'SpaceGrotesk-Medium';
+    text-transform: uppercase;
+}
