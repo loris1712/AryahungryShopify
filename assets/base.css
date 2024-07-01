@@ -75,6 +75,10 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
+.shopify-policy__title h1{
+  color: #015a3c;
+}
+
 /* base */
 body{
   background-color: #F5F5F5!important;
