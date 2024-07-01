@@ -26,7 +26,7 @@
         "announcement-bar-0"
       ],
       "custom_css": [
-        ".utility-bar{background-color: #015a3c !important;}"
+        ".utility-bar {background-color: #015a3c !important;}"
       ],
       "settings": {
         "color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
@@ -50,7 +50,7 @@
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "always",
         "show_line_separator": false,
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
         "menu_color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
