@@ -11,6 +11,7 @@
   "sections": {
     "custom_liquid_VzTVqY": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<style>\n h1{\ntext-align: center;\npadding:0;\nmargin:0;\ntext-transform: uppercase;\ncolor: #015a3c;\n}\n<\/style>\n<h1>Shop<\/h1>",
         "color_scheme": "",
