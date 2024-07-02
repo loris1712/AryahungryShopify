@@ -131,7 +131,7 @@
         "h2 {color: #015a3c; text-align: center; text-transform: uppercase;}",
         ".grid {gap: 1rem; row-gap: 2rem;}",
         ".grid__item {min-width: 380px; margin-right: 16px; max-width: 380px; width: 100%;}",
-        "@media screen and (max-width: 768px) {.collection__title h2 {font-size: 20px; } }"
+        "@media screen and (max-width: 768px) {.collection__title h2 {font-size: 20px; } .product-grid .grid__item {min-width: 90%; max-width: 90%; }}"
       ],
       "settings": {
         "title": "Recommended",
