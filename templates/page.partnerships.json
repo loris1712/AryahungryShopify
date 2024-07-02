@@ -51,7 +51,7 @@
         "button_KHqxYX"
       ],
       "custom_css": [
-        ".rich-text__wrapper {padding-top: 30rem; padding-bottom: 20rem;}",
+        ".rich-text__wrapper {padding-top: 30rem; padding-bottom: rem;}",
         "@media (max-width: 767px) {.rich-text__wrapper {padding-top: 28rem; padding-bottom: 3rem; } .inline-richtext {font-size: 26px; }}",
         ".rich-text__text {margin-top: 0;}",
         ".rich-text__buttons {margin-top: 0;}"
