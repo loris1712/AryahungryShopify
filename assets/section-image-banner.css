@@ -6,6 +6,8 @@
   isolation: isolate;
 }
 
+
+
 .banner__box {
   text-align: center;
 }
@@ -90,7 +92,9 @@
   }
 
   .banner--medium:not(.banner--adapt) {
-    min-height: 56rem;
+   min-height: 56rem; 
+   width: 93vw;
+    margin: auto; } 
   }
 
   .banner--large:not(.banner--adapt) {
@@ -490,3 +494,5 @@
     color: currentColor;
   }
 }
+
+
