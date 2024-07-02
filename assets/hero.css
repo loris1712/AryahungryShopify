@@ -14,11 +14,13 @@
 
 .banner-img {
   z-index: 1;
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: contain;
   object-position: center;
   position: relative;
+  max-width: 1414px;
+  max-height: 756px;
 }
 
 .banner-text-container {
