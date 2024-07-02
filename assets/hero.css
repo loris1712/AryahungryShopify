@@ -2,7 +2,6 @@
   position: relative;
   height: fit-content;
   display: flex;
-  max-width: var(--page-width);
 }
 
 #herodateinput {
