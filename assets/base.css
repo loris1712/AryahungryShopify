@@ -81,6 +81,11 @@
 
 #MainContent{
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.slider-mobile-gutter{
+  width: 101vw;
 }
 
 @media screen and (max-width: 768px) {
