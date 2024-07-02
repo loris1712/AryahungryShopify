@@ -6,6 +6,10 @@
   isolation: isolate;
 }
 
+.banner__media{
+  border-radius: 24px;
+}
+
 
 
 .banner__box {
