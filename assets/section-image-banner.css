@@ -8,8 +8,6 @@
 
 .banner__media{
   border-radius: 24px;
-  max-width: var(--page-width);
-  margin: auto;
 }
 
 

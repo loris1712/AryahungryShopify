@@ -15,8 +15,6 @@
   object-fit: cover;
   object-position: center;
   position: relative;
-  max-width: var(--page-width);
-  max-height: 756px;
 }
 
 .banner-text-container {
@@ -63,6 +61,7 @@
     right: 0;
     left: 0;
     padding: 0 1rem;
+    min-width: fit-content;
   }
   .banner-date {
     font-size: 1.4rem;
