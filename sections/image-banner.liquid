@@ -1,4 +1,5 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'hero.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
@@ -29,6 +30,44 @@
   }
 {%- endstyle -%}
 
+{% liquid
+  assign release_date = section.settings.date
+%}
+<input id="herodateinput" value="{{release_date}}">
+
+{% javascript %}
+  const dateInput = document.getElementById('herodateinput')?.value;
+  const countdownDate = new Date(dateInput).getTime();
+
+  function update() {
+    const now = new Date().getTime();
+    var distance = countdownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    const bannerDate = document.getElementById('banner-date');
+    bannerDate.innerHTML = `${days} DAYS  ${hours} HR ${minutes} MIN ${seconds} SEC`;
+    return distance;
+  }
+
+  function setUpTime() {
+    if (dateInput) {
+      const distance = update();
+      const countDownFunction = setInterval(function () {
+        const distance = update();
+        if (distance < 0) {
+          clearInterval(countDownFunction);
+        }
+      }, 1000);
+    }
+  }
+  update();
+  setUpTime();
+{% endjavascript %}
+
 {%- liquid
   assign full_width = '100vw'
   assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
@@ -53,7 +92,7 @@
 
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  class="banner banner-wrapper banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -81,6 +120,10 @@
           widths: widths,
           fetchpriority: fetch_priority
       }}
+    </div>
+    <div class="banner-text-container">
+      <p class="banner-title">{{ section.settings.banner_title }}</p>
+      <p class="banner-date" id="banner-date"></p>
     </div>
   {%- elsif section.settings.image_2 == blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
