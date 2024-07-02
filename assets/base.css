@@ -79,6 +79,10 @@
   color: #015a3c;
 }
 
+#MainContent{
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 768px) {
       .doubly-float {
           left: auto !important;
