@@ -64,6 +64,7 @@
         height: 45rem;
         width: 88vw;
         margin: auto;
+        border-radius: 20px;
   }
 
   .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media,
@@ -96,7 +97,8 @@
   .banner--medium:not(.banner--adapt) {
    min-height: 56rem; 
    width: 93vw;
-    margin: auto; } 
+   margin: auto;
+   border-radius: 20px;} 
   }
 
   .banner--large:not(.banner--adapt) {
