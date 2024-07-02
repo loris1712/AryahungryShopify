@@ -131,7 +131,7 @@
         "h2 {color: #015a3c; text-align: center; text-transform: uppercase;}",
         ".grid {gap: 1rem; row-gap: 2rem;}",
         ".grid__item {min-width: 380px; margin-right: 16px; max-width: 380px; width: 100%;}",
-        "@media screen and (max-width: 768px) {.collection__title h2 {font-size: 20px; }}"
+        "@media screen and (max-width: 768px) {.collection__title h2 {font-size: 20px; } }"
       ],
       "settings": {
         "title": "Recommended",
@@ -144,7 +144,6 @@
         "columns_desktop": 3,
         "full_width": true,
         "show_view_all": true,
-        "tilt": false,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "color_scheme": "scheme-a2b8f2ee-b5e8-4b9f-b357-7bdb3c74e611",
