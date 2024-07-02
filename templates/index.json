@@ -12,7 +12,7 @@
     "image_banner_3YnzHE": {
       "type": "image-banner",
       "custom_css": [
-        ".banner__content{height:756px;}"
+        ".banner__content {height: 756px; max-width:1600px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/AryaHungry-Photoshoot-_7_-min.png",
