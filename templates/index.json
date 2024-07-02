@@ -16,7 +16,7 @@
         "@media (max-width: 767px) {.banner-img {z-index: 1; height: 432px; width: 100%; object-fit: cover; object-position: -5rem; position: relative; }}"
       ],
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/image.png",
+        "banner_image": "shopify:\/\/shop_images\/Rectangle_82_1_1.png",
         "banner_title": "Upcoming release",
         "date": "10\/31\/2024 23:30:00"
       }
