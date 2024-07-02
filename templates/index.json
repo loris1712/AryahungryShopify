@@ -11,12 +11,13 @@
   "sections": {
     "image_banner_3YnzHE": {
       "type": "image-banner",
-      "disabled": true,
       "custom_css": [
 
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/AryaHungry-Photoshoot-_7_-min.png",
+        "banner_title": "UPCOMING RELEASE",
+        "date": "10\/31\/2024 23:30:00",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -31,6 +32,7 @@
     },
     "hero_w4Lm7h": {
       "type": "hero",
+      "disabled": true,
       "custom_css": [
         ".banner-img {border-radius: 24px; height: 756px; width: 1344px; object-fit: contain;}",
         ".banner-wrapper {height: 756px; width: 1344px;}",
