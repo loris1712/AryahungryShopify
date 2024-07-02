@@ -1,12 +1,7 @@
 .banner-wrapper {
   position: relative;
   height: fit-content;
-  padding-inline: 5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 756px;
-  width: 1344px;
 }
 
 #herodateinput {
