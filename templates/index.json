@@ -12,7 +12,7 @@
     "image_banner_3YnzHE": {
       "type": "image-banner",
       "custom_css": [
-        ".banner {margin: auto; display: flex; align-items: center; justify-content: center; max-width: 1600px; width: 100%; height: 756px; padding-inline: 5rem;}",
+        ".banner {margin: auto; display: flex; align-items: center; justify-content: center; max-width: 1600px; height: 756px; padding-inline: 5rem;}",
         "@media screen and (max-width: 760px) {.banner {height: auto; }}"
       ],
       "settings": {
