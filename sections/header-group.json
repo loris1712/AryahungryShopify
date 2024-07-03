@@ -13,6 +13,18 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "blocks": {
+        "announcement_p8qYkk": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE SHIPPING OVER $100",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_p8qYkk"
+      ],
       "custom_css": [
         ".utility-bar {background-color: #015a3c !important;}"
       ],
