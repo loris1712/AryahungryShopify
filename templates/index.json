@@ -13,7 +13,8 @@
       "type": "image-banner",
       "custom_css": [
         ".banner {margin: auto; display: flex; align-items: center; justify-content: center; max-width: 1600px; height: 756px; padding-inline: 5rem;}",
-        "@media screen and (max-width: 760px) {.banner {height: auto; max-width: 100%; padding-inline: 0; }}"
+        "@media screen and (max-width: 760px) {.banner {height: auto; max-width: 100%; padding-inline: 0; }}",
+        ".banner-date {display: ;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/AryaHungry-Photoshoot-_7_-min.png",
