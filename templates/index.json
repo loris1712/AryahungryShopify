@@ -14,11 +14,11 @@
       "custom_css": [
         ".banner {margin: auto; display: flex; align-items: center; justify-content: center; max-width: 1600px; height: 756px; padding-inline: 5rem;}",
         "@media screen and (max-width: 760px) {.banner {height: auto; max-width: 100%; padding-inline: 0; }}",
-        ".banner-date {display: ;}"
+        ".banner-date {display: none;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/AryaHungry-Photoshoot-_7_-min.png",
-        "banner_title": "UPCOMING RELEASE",
+        "banner_title": "NEW MERCHANDISE OUT NOW",
         "date": "10\/31\/2024 23:30:00",
         "image_overlay_opacity": 0,
         "image_height": "medium",
