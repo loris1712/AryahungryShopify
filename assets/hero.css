@@ -30,16 +30,18 @@
   min-width: 450px;
 }
 
+
 .banner-title {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-family: var(--font-body-family);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'IntegralCF-Heavy' !important;
+    margin: 0px;
+    padding: 0px;
 }
+
 
 .banner-date {
   color: #fff;
