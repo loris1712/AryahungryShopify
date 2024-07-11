@@ -10,10 +10,11 @@ slider-component {
   display: block;
 }
 
+/*
 .section-template--22972206219580__featured_collection_GtRaDg-padding slider-component{
   transform: rotate(-2deg) !important;
 
-}
+}*/
 
 slider-component.slider-component-full-width {
   --desktop-margin-left-first-item: 1.5rem;
