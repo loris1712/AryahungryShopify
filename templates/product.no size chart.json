@@ -67,6 +67,7 @@
         },
         "collapsible_tab_bRCTGr": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Size Chart",
             "icon": "none",
