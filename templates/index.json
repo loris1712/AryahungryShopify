@@ -14,12 +14,11 @@
       "custom_css": [
         ".banner {margin: auto; display: flex; align-items: center; justify-content: center; max-width: 1600px; height: 756px; padding-inline: 5rem;}",
         "@media screen and (max-width: 760px) {.banner {height: auto; max-width: 100%; padding-inline: 0; }}",
-        ".banner-date {display: none;}",
         "@media screen and (min-width: 760px) {.banner-text-container {position: absolute; z-index: 2; top: 2rem; left: 12rem; display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/new.png",
-        "banner_title": "MERCHANDISE AVAILABLE",
+        "banner_title": "MERCHANDISE AVAILABLE NOV 4",
         "date": "11/06/2024 18:00:00",
         "image_overlay_opacity": 0,
         "image_height": "medium",
