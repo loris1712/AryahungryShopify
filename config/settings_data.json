@@ -1,15 +1,15 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/aryahungry.svg",
+    "logo": "shopify://shop_images/aryahungry.svg",
     "logo_width": 200,
     "type_header_font": "dela_gothic_one_n4",
     "heading_scale": 110,
@@ -107,7 +107,7 @@
     "sale_badge_color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
     "sold_out_badge_color_scheme": "scheme-5425b735-5512-4e6e-8b85-c9f7e68236a2",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -146,31 +146,25 @@
     ],
     "blocks": {
       "3127803799193547933": {
-        "type": "shopify:\/\/apps\/kaching-custom-cursor\/blocks\/app-embed-block\/8e414c2f-e094-4ca5-85c3-6c0df939a019",
+        "type": "shopify://apps/kaching-custom-cursor/blocks/app-embed-block/8e414c2f-e094-4ca5-85c3-6c0df939a019",
         "disabled": false,
         "settings": {
         }
       },
       "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "14429071373314833104": {
-        "type": "shopify:\/\/apps\/candy-rack\/blocks\/head\/cb9c657f-334f-4905-80c2-f69cca01460c",
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "18423266570658624584": {
-        "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
+        "type": "shopify://apps/best-currency-converter/blocks/doubly/267afa86-a419-4d5b-a61b-556038e7294d",
         "disabled": true,
         "settings": {
         }
@@ -412,7 +406,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-1",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
