@@ -75,7 +75,7 @@
   .banner-text-container {
     right: 0;
     left: 0;
-    padding: 0 1rem;
+    padding: 0 5rem;
     min-width: fit-content;
   }
   .banner-date {
@@ -85,3 +85,5 @@
     font-size: 2.5rem;
   }
 }
+
+
