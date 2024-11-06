@@ -16,7 +16,7 @@
         "@media screen and (max-width: 760px) {.banner {height: auto; max-width: 100%; padding-inline: 0; }}",
         "@media screen and (min-width: 760px) {.banner-text-container {position: absolute; z-index: 2; top: 2rem; left: 12rem; display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center; }}",
         ".banner-title {font-size: 1.8em; line-height: 1em;}",
-        ".banner-date {padding-top: 20px; color: white;}"
+        ".banner-date {DISPLAY:NONE;}"
       ],
       "settings": {
         "image": "shopify://shop_images/new.png",
